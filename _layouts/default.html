@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Timeliners</title>
+</head>
+<body>
+
+  <!-- Navbar Starts -->
+
+  <nav>
+    <div class="logo">
+      {% include logo/logo.html %}
+    </div>
+    <ul class="navigation">
+      {% for item in site.data.navigation.navigation %}
+        <li class="nav-item {% if item.url == page.permalink %} active {% endif %}">
+          <a href="{{ item.url }}" class="nav-link">{{ item.pageName }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+  <!-- Navbar Ends -->
+
+  {{ content }}
+</body>
+</html>

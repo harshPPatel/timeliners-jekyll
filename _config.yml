@@ -34,3 +34,8 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# SASS settings
+sass:
+  sass_dir: _sass
+  style: compressed

@@ -1,0 +1,13 @@
+navigation:
+  - pageName: "Home"
+    url: index.html
+  - pageName: "About Us"
+    url: about.html
+  - pageName: "Blogs"
+    url: blog-index.html
+  - pageName: "Locations"
+    url: locations.html
+  - pageName: "Watches"
+    url: watch-index.html
+  - pageName: "Sign In"
+    url: sign-in.html
