@@ -1,0 +1,58 @@
+// Local Variables (Navbar Height = 80px)
+$navbar-height: 5rem
+$navbar-brand-height: 3.75rem
+
+// Styles
+
+nav
+  background-color: $white-color
+  height: $navbar-height
+  width: 100%
+  box-shadow: $basic-box-shadow
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  z-index: 9999
+  .u-container
+    +flex
+    justify-content: space-between
+    height: 100%
+  .logo
+    height: $navbar-brand-height
+    svg
+      height: 100%
+  ul
+    list-style: none
+    font-family: $sub-heading-font
+    font-weight: $base-font-weight-bold
+    text-transform: uppercase
+    height: 100%
+
+// Navigation Links Stylings
+
+li.nav-item
+  display: inline-block
+  height: 100%
+  &:not(:last-of-type)
+    margin-right: 20px
+  // active class stylings
+  a.nav-link
+    color: $heading-color
+    text-decoration: none
+    transition: all 0.3s ease
+    line-height: $navbar-height
+    display: inline-block
+    &:hover
+      color: $primary-color
+  &.active
+    &::after
+      display: block
+      content: ''
+      height: 5px
+      width: 100%
+      margin: 0 auto
+      margin-top: -5px
+      background-color: $primary-color
+    a.nav-link
+      color: $primary-color

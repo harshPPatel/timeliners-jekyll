@@ -1,0 +1,14 @@
+# List of social link with the url to use in the site
+socialLinks:
+  - platform: "Facebook"
+    url: https://www.facebook.com/
+  - platform: "Instagram"
+    url: https://www.instagram.com/
+  - platform: "Twitter"
+    url: https://www.twitter.com/
+  - platform: "Google Plus"
+    url: https://plus.google.com/
+  - platform: "Linked In"
+    url: https://www.linkedin.com/
+  - platform: "Pinterest"
+    url: https://www.pinterest.com/

@@ -1,0 +1,65 @@
+// Local Vairiable
+$footer-heading-height: 75px
+
+
+// Styling
+
+footer
+  background-color: $footer-color
+  color: $white-color
+  position: relative
+  +section-padding
+  a,
+  p
+    color: $white-color
+  .logo a
+    opacity: 1
+  a
+    opacity: 0.8
+    letter-spacing: 1px
+    transition: opacity 0.2s ease
+    &:hover
+      opacity: 1
+  address
+    opacity: 0.8
+    letter-spacing: 1px
+  h3
+    font-size: 1.8rem
+    line-height: $footer-heading-height
+    margin-left: -1.5rem
+  svg
+    margin-left: -70px
+    max-width: 300px
+    max-height: $footer-heading-height
+    *
+      fill: $white-color!important
+  .row
+    position: relative
+  .address-content
+    position: absolute
+    margin-bottom: 1.5rem
+    bottom: 0
+    .u-bold
+      &:not(:last-of-type)
+        margin-bottom: 5px
+      &:not(:first-of-type)
+        margin-top: 10px
+
+  .copyright
+    position: absolute
+    bottom: 2rem
+    right: 2rem
+    opacity: 0.6
+
+
+// Footer Navigation
+
+.footer-nav
+  margin-top: 2rem
+  list-style: none
+  .footer-item:not(:last-of-type)
+    margin-bottom: 1rem
+  .footer-link
+    text-transform: uppercase
+    font-weight: $base-font-weight-bold
+    text-decoration: none

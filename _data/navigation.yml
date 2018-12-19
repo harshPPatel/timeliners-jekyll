@@ -1,3 +1,4 @@
+# List of navigation links to use in the site
 navigation:
   - pageName: "Home"
     url: index.html

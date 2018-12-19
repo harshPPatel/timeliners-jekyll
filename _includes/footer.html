@@ -1,0 +1,48 @@
+<!-- Footer Starts -->
+<footer>
+  <div class="u-container">
+    <div class="row">
+      <div class="col col-1-of-3">
+        <div class="logo">
+          <a href="{{ site.data.navigation.navigation[0].url }}">
+            {% include logo/logo.html %}
+          </a>
+        </div>
+        <ul class="footer-nav">
+          {% for item in site.data.navigation.navigation %}
+            <li class="footer-item">
+              <a href="{{ item.url }}" class="footer-link">{{ item.pageName }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="col col-1-of-3">
+        <h3 class="special">Follow Us On Web</h3>
+        <ul class="footer-nav">
+          {% for item in site.data.socialLinks.socialLinks %}
+            <li class="footer-item">
+              <a href="{{ item.url }}" class="footer-link" target="_blank">{{ item.platform }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="col col-1-of-3">
+        <div class="address-content">
+          <p class="u-bold u-capital">Address: <a href="#"><span>LOGO</span></a></p>
+          <address>
+            123, HotStream Avenue, <br>
+            Toronto, <br>
+            Manitoba, Canada. <br>
+            <span class="u-capital">r2c0n5</span>
+          </address>
+          <p class="u-bold u-capital">Phone Number:</p>
+          <p><a href="tel:+1234567890">+{{ site.phone }}</a></p>
+          <p class="u-bold u-capital">E-mail:</p>
+          <p><a href="mailto:abcd123@xyz.com">{{ site.email }}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="copyright">Copyrighted, 2018. THE TIMELINERS.<a href="#">Terms</a> and <a href="#">Conditions</a>  are applied.</p>
+</footer>
+<!-- Footer Ends -->
