@@ -5,10 +5,14 @@ $footer-heading-height: 75px
 // Styling
 
 footer
-  background-color: $footer-color
-  color: $white-color
+  background: $footer-color
   position: relative
-  +section-padding
+  .u-container
+    +section-padding
+    background: url(../img/footer-background-img.png) left center no-repeat
+    background-size: contain
+  *
+    color: $white-color
   a,
   p
     color: $white-color

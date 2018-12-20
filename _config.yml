@@ -36,11 +36,6 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-# SASS settings
-sass:
-  sass_dir: _sass
-  style: compressed
-
 # Image default front matter
 defaults:
   -
@@ -48,3 +43,5 @@ defaults:
       path: 'assets/img/'
     values:
       globalImage: true
+
+exclude: [README.md, gulpfile.js, package-lock.json, package.json, node_modules, feed.xml, Gemfile, Gemfile.lock]
