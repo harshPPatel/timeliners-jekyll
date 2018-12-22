@@ -42,6 +42,4 @@ defaults:
     scope:
       path: 'assets/img/'
     values:
-      globalImage: true
-
-exclude: [README.md, gulpfile.js, package-lock.json, package.json, node_modules, feed.xml, Gemfile, Gemfile.lock]
+      globalImage: true 

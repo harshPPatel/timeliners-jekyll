@@ -8,14 +8,15 @@ var { parallel,
     sass          = require('gulp-sass'),
     plumber       = require('gulp-plumber'),
     concat        = require('gulp-concat'),
-    minify        = require('gulp-minify'),
-    pump          = require('pump');
+    pump          = require('pump'),
+    browserSync   = require('browser-sync');
 
-var sassSource    = '_sass/**/*.sass',
-    jsSource      = 'js/*.js';
+var sassSource    = 'sass/**/*.sass',
+    appJSSource   = 'js/*.js',
+    vendorJSSource= 'js/vendors/*.js';
 
-var cssDestination  = 'assets/css/',
-    jsDestination   = 'assets/js/';
+var cssDestination  = '../assets/css/',
+    jsDestination   = '../assets/js/';
 
 task('sass', function(cb) {
   return src(sassSource)
@@ -36,10 +37,20 @@ task('sass', function(cb) {
 
 task('appJS', function(cb) {
   pump([
-      src(jsSource),
+      src(appJSSource),
       plumber(),
       concat('app.js'),
-      minify(),
+      dest(jsDestination)
+    ],
+  cb
+  );
+})
+
+task('vendorJS', function(cb) {
+  pump([
+      src(vendorJSSource),
+      plumber(),
+      concat('vendors.js'),
       dest(jsDestination)
     ],
   cb
@@ -47,9 +58,19 @@ task('appJS', function(cb) {
 })
 
 task('watch', function(cb) {
+  browserSync.init({
+    server: {
+      baseDir: '../_site'
+    },
+    notify: true
+  });
   watch(sassSource, task('sass'));
-  watch(jsSource, task('appJS'));
+  watch(appJSSource, task('appJS'));
+  watch(vendorJSSource, task('vendorJS'));
+  watch([
+    '../_site/**/**/*'
+  ]).on('change', browserSync.reload);
   cb();
 })
 
-exports.default = parallel ( task('sass'), task('appJS'), task('watch'));
+exports.default = parallel ( task('sass'), task('appJS'), task('vendorJS'), task('watch'));
