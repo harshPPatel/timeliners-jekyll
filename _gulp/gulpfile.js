@@ -68,7 +68,10 @@ task('watch', function(cb) {
   watch(appJSSource, task('appJS'));
   watch(vendorJSSource, task('vendorJS'));
   watch([
-    '../_site/**/**/*'
+    '../_site/*.html',
+    '../_site/assets/css/*.css',
+    '../_site/assets/js/*.js',
+    '../_site/assets/js/CrossBrowserJS/*.js'
   ]).on('change', browserSync.reload);
   cb();
 })

@@ -113,4 +113,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# VS CODE setting
+.vscode
+
 # End of https://www.gitignore.io/api/node,jekyll,windows

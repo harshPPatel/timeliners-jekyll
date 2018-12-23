@@ -1,15 +1,12 @@
-/*  SECTIONS  =============================================================================
 
 .section
   clear: both
   padding: 0px
   margin: 0px
 
-/*  GROUPING  =============================================================================
 
 .row
   zoom: 1
-  /* For IE 6/7 (trigger hasLayout)
   &:before
     content: ""
     display: table
@@ -18,7 +15,6 @@
     display: table
     clear: both
 
-/*  GRID COLUMN SETUP   ====================================================================
 
 .col
   display: block
@@ -28,16 +24,10 @@
   &:first-child
     margin-left: 0
 
-/* all browsers except IE6 and lower
-
-/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS
-
 @media only screen and (max-width: 480px)
   .col
-    /*margin: 1% 0 1% 0%;
     margin: 0
 
-/*  GRID OF TWO   =============================================================================
 
 .col-2-of-2
   width: 100%
@@ -45,13 +35,11 @@
 .col-1-of-2
   width: 49.2%
 
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS
 
 @media only screen and (max-width: 480px)
   .col-2-of-2, .col-1-of-2
     width: 100%
 
-/*  GRID OF THREE   =============================================================================
 
 .col-3-of-3
   width: 100%
@@ -62,13 +50,11 @@
 .col-1-of-3
   width: 32.26%
 
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS
 
 @media only screen and (max-width: 480px)
   .col-3-of-3, .col-2-of-3, .col-1-of-3
     width: 100%
 
-/*  GRID OF FOUR   =============================================================================
 
 .col-4-of-4
   width: 100%
@@ -82,13 +68,11 @@
 .col-1-of-4
   width: 23.8%
 
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS
 
 @media only screen and (max-width: 480px)
   .col-4-of-4, .col-3-of-4, .col-2-of-4, .col-1-of-4
     width: 100%
 
-/*  GRID OF FIVE   =============================================================================
 
 .col-5-of-5
   width: 100%
@@ -105,13 +89,11 @@
 .col-1-of-5
   width: 18.72%
 
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS
 
 @media only screen and (max-width: 480px)
   .col-5-of-5, .col-4-of-5, .col-3-of-5, .col-2-of-5, .col-1-of-5
     width: 100%
 
-/*  GRID OF SIX   =============================================================================
 
 .col-6-of-6
   width: 100%
@@ -131,13 +113,11 @@
 .col-1-of-6
   width: 15.33%
 
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS
 
 @media only screen and (max-width: 480px)
   .col-6-of-6, .col-5-of-6, .col-4-of-6, .col-3-of-6, .col-2-of-6, .col-1-of-6
     width: 100%
 
-/*  GRID OF SEVEN   =============================================================================
 
 .col-7-of-7
   width: 100%
@@ -160,13 +140,11 @@
 .col-1-of-7
   width: 12.91%
 
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS
 
 @media only screen and (max-width: 480px)
   .col-7-of-7, .col-6-of-7, .col-5-of-7, .col-4-of-7, .col-3-of-7, .col-2-of-7, .col-1-of-7
     width: 100%
 
-/*  GRID OF EIGHT   =============================================================================
 
 .col-8-of-8
   width: 100%
@@ -192,13 +170,11 @@
 .col-1-of-8
   width: 11.1%
 
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS
 
 @media only screen and (max-width: 480px)
   .col-8-of-8, .col-7-of-8, .col-6-of-8, .col-5-of-8, .col-4-of-8, .col-3-of-8, .col-2-of-8, .col-1-of-8
     width: 100%
 
-/*  GRID OF NINE   =============================================================================
 
 .col-9-of-9
   width: 100%
@@ -227,13 +203,11 @@
 .col-1-of-9
   width: 9.68%
 
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS
 
 @media only screen and (max-width: 480px)
   .col-9-of-9, .col-8-of-9, .col-7-of-9, .col-6-of-9, .col-5-of-9, .col-4-of-9, .col-3-of-9, .col-2-of-9, .col-1-of-9
     width: 100%
 
-/*  GRID OF TEN   =============================================================================
 
 .col-10-of-10
   width: 100%
@@ -265,13 +239,11 @@
 .col-1-of-10
   width: 8.56%
 
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS
 
 @media only screen and (max-width: 480px)
   .col-10-of-10, .col-9-of-10, .col-8-of-10, .col-7-of-10, .col-6-of-10, .col-5-of-10, .col-4-of-10, .col-3-of-10, .col-2-of-10, .col-1-of-10
     width: 100%
 
-/*  GRID OF ELEVEN   =============================================================================
 
 .col-11-of-11
   width: 100%
@@ -306,13 +278,11 @@
 .col-1-of-11
   width: 7.63%
 
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS
 
 @media only screen and (max-width: 480px)
   .col-11-of-11, .col-10-of-11, .col-9-of-11, .col-8-of-11, .col-7-of-11, .col-6-of-11, .col-5-of-11, .col-4-of-11, .col-3-of-11, .col-2-of-11, .col-1-of-11
     width: 100%
 
-/*  GRID OF TWELVE   =============================================================================
 
 .col-12-of-12
   width: 100%
@@ -350,7 +320,6 @@
 .col-1-of-12
   width: 6.86%
 
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS
 
 @media only screen and (max-width: 480px)
   .col-12-of-12, .col-11-of-12, .col-10-of-12, .col-9-of-12, .col-8-of-12, .col-7-of-12, .col-6-of-12, .col-5-of-12, .col-4-of-12, .col-3-of-12, .col-2-of-12, .col-1-of-12
