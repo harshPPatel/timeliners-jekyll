@@ -1,0 +1,30 @@
+.index_upcoming_watch
+  overflow: hidden
+  background: url(../img/upcoming-watch-bg.jpg) center center no-repeat
+  background-size: cover
+  &__img
+    transform: scale(1.1)
+  &__text
+    margin: 1rem 0
+    *
+      color: $white-color
+    .watch_name
+      margin-top: 20px
+      margin-bottom: 1rem
+      .company_name
+        font-family: $base-font
+        font-size: 1rem
+        margin-bottom: -1rem
+    .launch_date
+      letter-spacing: 2px
+      span
+        margin-right: 1rem
+    .preview_text
+      opacity: 0.6
+      transition: all 0.5s ease
+      cursor: default
+      max-width: 300px
+      width: 100%
+      margin: 1rem 0 1.5rem
+      &:hover
+        opacity: 0.8
