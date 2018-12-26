@@ -1,4 +1,7 @@
 Scroll To Top : https://www.scrolltotop.com/
-jQuery
+Glider Js : https://nickpiscitelli.github.io/Glider.js/
+product carousal: https://www.jqueryscript.net/slider/Product-Carousel-Magnifying-Effect-exzoom.html
+
+- jQuery
 
 make md describing folder structure
