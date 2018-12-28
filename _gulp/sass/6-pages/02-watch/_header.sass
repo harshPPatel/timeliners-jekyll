@@ -2,5 +2,36 @@
   height: 90vh
   overflow: hidden
   +flex
-  .u-container
-    margin-top: -10%
+  .flex-col
+    &:last-of-type
+      padding-left: 80px
+      position: relative
+      &::before
+        display: block
+        content: ''
+        height: 80%
+        width: 1px
+        background-color: rgba(#707070, 0.2)
+        position: absolute
+        left: 0
+        top: 10%
+        bottom: 10%
+  .product_details
+    .company_name
+      font-size: 2rem
+      margin-top: -1rem
+      color: $heading-color
+      &::after
+        display: block
+        content: ''
+        width: 2rem
+        height: 6px
+        background-color: $secondary-color
+        margin: 20px 0
+    .watch_price
+      font-size: 2rem
+      margin: 20px 0 30px
+      &_only
+        font-size: 1rem
+  .btn-wrapper a:first-of-type
+    margin-right: 2rem

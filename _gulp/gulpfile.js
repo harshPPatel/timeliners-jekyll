@@ -63,7 +63,16 @@ task('watch', function(cb) {
       baseDir: '../_site'
     },
     notify: true
-  });
+  },
+  function(err, bs) {
+      bs.addMiddleware("*", function(req, res) {
+          res.writeHead(302, {
+              location: "404.html"
+          });
+          res.end("Redirecting!");
+      });
+    }
+  );
   watch(sassSource, task('sass'));
   watch(appJSSource, task('appJS'));
   watch(vendorJSSource, task('vendorJS'));

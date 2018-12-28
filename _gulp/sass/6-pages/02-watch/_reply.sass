@@ -1,0 +1,41 @@
+.watch_reply
+  margin-bottom: 100px
+  h5
+    text-align: center
+    margin-bottom: 50px
+  .row
+    margin: 0 auto
+  .reply_form
+    .row:not(:last-of-type)
+      margin-bottom: 20px
+
+    textarea,
+    input:not([type="submit"])
+      border: 1px solid rgba($heading-color, 0.3)
+      border-radius: 2px
+      padding: 0 10px
+      width: 100%
+      height: 30px
+      transition: all 0.2s ease
+      color: $heading-color
+      &::placeholder
+        color: $heading-color
+      &:focus
+        border-color: $heading-color
+    input
+      outline: none
+      box-shadow: none
+      border: none
+      &[type="submit"]
+        display: block
+        margin-left: auto
+        border-radius: 5px
+        color: $white-color
+        box-shadow: none
+        box-shadow: $basic-shadow
+        transtion: all 0.4s ease
+    textarea
+      outline: none
+      height: 90px
+      resize: none
+      padding-top: 5px

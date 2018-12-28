@@ -1,0 +1,57 @@
+.comment_box
+  +flex
+  cursor: default
+  &.subComment
+    width: 90%
+    margin-left: auto
+    position: relative
+    &::before
+      display: block
+      content: ''
+      width: 2px
+      height: 50px
+      background-color: rgba($black-color, 0.05)
+      position: absolute
+      left: -5%
+  &:not(:last-of-type)
+    margin-bottom: 20px
+  img
+    height: 60px
+    border-radius: 100%
+    margin-right: 2rem
+  .comment
+    border-radius: 10px
+    border-bottom-left-radius: 0px
+    border: 1px solid rgba(#707070, 0.2)
+    // max-width: 375px
+    width: 100%
+    padding: 10px 20px
+    transition: all 0.2s ease
+    &:hover
+      box-shadow: $basic-shadow
+  .comment_text
+    margin-bottom: 0.5rem
+  svg
+    height: 1rem
+  .comment_buttons_wrapper
+    +flex
+    width: 100%
+    justify-content: space-between
+  .comment_action_buttons
+    +flex
+  .comment_link
+    +flex
+    text-decoration: none
+    margin-right: 10px
+    color: $heading-color
+    transition: all 0.5s ease
+    &:hover
+      color: $primary-color
+    svg
+      margin-right: 5px
+  .social_links
+    +flex
+    .comment_link_social
+      &:not(:first-of-type)
+        margin-left: 10px
+    

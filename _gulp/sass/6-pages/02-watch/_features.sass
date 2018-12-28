@@ -1,0 +1,19 @@
+.watch_features
+  padding: 50px 0
+  background-color: $bg-color
+  .col-1-of-2
+    .feature_box
+      margin: 0 auto 1rem
+    &:nth-of-type(odd)
+      margin-right: 1rem
+      .feature_box
+        margin-right: 0
+        margin-left: auto 
+    &:nth-of-type(even)
+      .feature_box
+        margin-left: 0
+        margin-right: auto 
+    &.odd
+      margin: 0 auto
+      .feature_box
+        margin-right: auto

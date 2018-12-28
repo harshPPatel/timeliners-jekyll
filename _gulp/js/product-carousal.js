@@ -1,7 +1,7 @@
 $(function(){
   $("#watch_header_image_carousal").exzoom({
-    "navWidth": 75,
-    "navHeight": 75,
+    "navWidth": 45,
+    "navHeight": 45,
     "navItemNum": 5,
     "autoPlay": false
   });

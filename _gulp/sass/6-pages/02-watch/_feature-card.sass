@@ -1,0 +1,28 @@
+.feature_box
+  max-width: 59%
+  width: 59%
+  margin: 0 auto
+  padding: 1rem 24px
+  border-radius: 5px
+  box-shadow: $basic-shadow
+  cursor: default
+  transition: all 0.2s ease
+  background-color: $white-color
+  &:hover
+    transform: scale(1.02)
+  +flex
+  .svg_container
+    height: 50px
+    width: 50px
+    min-height: 50px
+    min-width: 50px
+    +flex
+    justify-content: center
+    svg
+      height: auto
+      width: 100%
+  .feature_text
+    padding-left: 1rem
+    p:first-of-type
+      color: $heading-color
+      margin-bottom: 6px

@@ -1,0 +1,38 @@
+.watch_reviews
+  +section-padding
+  .glider
+    width: 66.67%
+    margin: 0 auto
+    text-align: center
+    img
+      height: 125px
+      width: 125px
+      border-radius: 125px
+      margin-bottom: 1rem
+    .review_container
+      padding: 1.25rem 0 0
+      background: url(../../assets/img/watch-review-bg.png) top left no-repeat, url(../../assets/img/watch-review-bg.png) bottom right no-repeat
+      background-size: 52.31px 60px
+      .review
+        margin-bottom: 1rem
+      .name
+        margin-bottom: 2rem
+  .glider-dot
+    background-color: $font-color
+    opacity: 0.3
+    &.active
+      background-color: $primary-color
+      opacity: 1
+  .glider-prev,
+  .glider-next
+    height: 40px
+    width: 40px
+    svg
+      height: 40px
+      path
+        opacity: 0.2
+        transition: all 0.3s
+      &:hover
+        path
+          fill: $primary-color!important
+          opacity: 0.8
