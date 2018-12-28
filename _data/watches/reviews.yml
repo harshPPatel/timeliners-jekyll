@@ -24,7 +24,7 @@ reviews:
 
   - watchName: Timer
     companyName: Lamex
-    reviews: 
+    reviews:
       - review: Although the Rolex GMT-Master was designed essentially for professional use, its combination of peerless functionality and rugged good looks has attracted a wider travelling public. As well as appreciating its ability to display different time zones these travellers admire the robustness and versatile appearance that make the GMT-Master eminently suitable for globetrotting and, indeed, for any occasion.
         name: Emmy Mathhew
       - review: Although the Rolex GMT-Master was designed essentially for professional use, its combination of peerless functionality and rugged good looks has attracted a wider travelling public. As well as appreciating its ability to display different time zones these travellers admire the robustness and versatile appearance that make the GMT-Master eminently suitable for globetrotting and, indeed, for any occasion.
@@ -42,4 +42,22 @@ reviews:
         comment: I liked this post. I like the way you described the product. Cant Wait!!
         name: mike
 
-    
+  - watchName: Maxima
+    companyName: Lamex
+    reviews:
+      - review: Although the Rolex GMT-Master was designed essentially for professional use, its combination of peerless functionality and rugged good looks has attracted a wider travelling public. As well as appreciating its ability to display different time zones these travellers admire the robustness and versatile appearance that make the GMT-Master eminently suitable for globetrotting and, indeed, for any occasion.
+        name: Emmy Mathhew
+      - review: Although the Rolex GMT-Master was designed essentially for professional use, its combination of peerless functionality and rugged good looks has attracted a wider travelling public. As well as appreciating its ability to display different time zones these travellers admire the robustness and versatile appearance that make the GMT-Master eminently suitable for globetrotting and, indeed, for any occasion.
+        name: Emmy Mathhew1
+      - review: Although the Rolex GMT-Master was designed essentially for professional use, its combination of peerless functionality and rugged good looks has attracted a wider travelling public. As well as appreciating its ability to display different time zones these travellers admire the robustness and versatile appearance that make the GMT-Master eminently suitable for globetrotting and, indeed, for any occasion.
+        name: Emmy Mathhew2
+    comments:
+      - isSubComment: false
+        comment: I liked this post. I like the way you described the product. Cant Wait!!
+        name: zach
+      - isSubComment: true
+        comment: Me Too!!
+        name: mary
+      - isSubComment: true
+        comment: I liked this post. I like the way you described the product. Cant Wait!!
+        name: mike
