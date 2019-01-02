@@ -1,0 +1,14 @@
+<img
+  src='../../../../../assets/img/blogs/{{ page.categories }}/{{ page.date | date: "%Y-%m-%d" }}-{{ page.imageName }}-feature.jpg'
+  alt="{{ page.title }} feature"
+  class="blog_post_header-background" >
+<div class="u-overlay"></div>
+<div class="content">
+  <h1>{{ page.title }}</h1>
+  <a href="../../../../../blogs/{{ page.categories }}.html" class="categories">{{ page.categories }}</a>
+  <p class="path">
+    <a href="../../../../../blog-index.html">Home</a> >
+    <a href="../../../../../blogs/{{ page.categories }}.html">{{ page.categories }}</a> >
+    <a href="{{ page.url }}" class="post_link">{{ page.title }}</a>
+  </p>
+</div>

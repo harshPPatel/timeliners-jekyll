@@ -3,19 +3,24 @@ layout: postDefault
 ---
 
 <header class="blog_post_header">
-  <img
-    src='../../../../../assets/img/blogs/{{ page.categories }}/{{ page.date | date: "%Y-%m-%d" }}-{{ page.imageName }}-feature.jpg'
-    alt="{{ page.title }} feature"
-    class="blog_post_header-background" >
-  <div class="content">
-    <h1>{{ page.title }}</h1>
-    <p>{{ page.categories }}</p>
-    <p class="path">
-      <a href="../../../../../blog-index.html">Home</a> /
-      <a href="../../../../../blogs/{{ page.categories }}.html">{{ page.categories }}</a> /
-      <a href="{{ page.url }}">{{ page.title }}</a>
-    </p>
-  </div>
+  {% include pages/blog-post/header.html %}
 </header>
+
+<main class="blog_post_body">
+  <div class="u-container">
+    <div class="row">
+      <div class="col col-8-of-12">
+        <div class="post_content">
+          <div class="post_text">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+      <div class="col col-4-of-12">
+        {% include pages/blog-post/sidebar.html %}
+      </div>
+    </div>
+  </div>
+</main>
 
 {{ content }}

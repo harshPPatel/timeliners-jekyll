@@ -1,0 +1,36 @@
+<div class="blog_sidebar">
+  <div class="searchbox_container">
+    <form class="blog_search_form" >
+      <!-- Prevent default in inline js -->
+      <input type="text" name="search" id="search" class="blog_search_input" placeholder="Search">
+      <button type="submit" role="button" class="blog_search_submit">
+        {% include icons/search.html %}
+      </button>
+    </form>
+  </div>
+  <div class="company_dashboard_container">
+    <div class="logo_container">
+      <a href="../../../../../about.html" target="_blank">
+        {% include logo/logo-secondary.html %}
+      </a>
+    </div>
+    <div class="content">
+      <p class="company_name u-bold">Timeliners</p>
+      <p class="kicker">The Watch Company</p>
+      <div class="social_link_wrapper">
+        <a href="https://www.facebook.com/" class="social_link" target="_blank">
+          {% include icons/facebook.html %}
+        </a>
+        <a href="https://www.youtube.com/" class="social_link" target="_blank">
+          {% include icons/youtube.html %}
+        </a>
+        <a href="https://www.twitter.com/" class="social_link" target="_blank">
+          {% include icons/twitter.html %}
+        </a>
+        <a href="https://www.linkedin.com/" class="social_link" target="_blank">
+          {% include icons/linked-in.html %}
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
