@@ -11,7 +11,7 @@
         <ul class="footer-nav">
           {% for item in site.data.navigation.navigation %}
             <li class="footer-item">
-              <a href="{{ item.url }}" class="footer-link">{{ item.pageName }}</a>
+              <a href="{{ item.url }}" class="footer-link u-capital">{{ item.pageName }}</a>
             </li>
           {% endfor %}
         </ul>
@@ -21,7 +21,7 @@
         <ul class="footer-nav">
           {% for item in site.data.socialLinks.socialLinks %}
             <li class="footer-item">
-              <a href="{{ item.url }}" class="footer-link" target="_blank">{{ item.platform }}</a>
+              <a href="{{ item.url }}" class="footer-link u-capital" target="_blank">{{ item.platform }}</a>
             </li>
           {% endfor %}
         </ul>
