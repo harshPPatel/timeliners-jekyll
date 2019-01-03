@@ -1,0 +1,35 @@
+.post_categories_container
+  padding: 40px 0
+  border-bottom: 2px solid rgba($black-color, 0.05)
+  .blog_sidebar_heading
+    margin-bottom: 20px
+    &:last-of-type
+      margin-top: 20px
+  .archive_list
+    list-style: none
+  .archive_row
+    +flex
+    justify-content: space-between
+    position: relative
+    cursor: default
+    &::after
+      content: '....................................................................................'
+      display: block
+      color: $heading-color
+      width: 100%
+      position: absolute
+      left: 0
+      bottom: 0
+      z-index: -1
+    p
+      background-color: $white-color
+      letter-spacing: 0
+      padding: 0 10px
+      &:first-of-type
+        padding-left: 0
+      a
+        color: $heading-color
+        text-decoration: none
+        transition: all 0.2s ease
+        &:hover
+          color: $primary-color

@@ -2,8 +2,20 @@
   @import "blog-sidebar-search"
   @import "blog-sidebar-compnay-dashboard"
   @import "blog-sidebar-popular-post"
+  @import "blog-sidebar-offer"
+  @import "blog-sidebar-post-categories"
+  @import "blog-sidebar-newsletter"
 
   // Styling
   padding: 30px
   padding-right: 0
   border-left: 2px solid rgba($black-color, 0.05)
+  .blog_sidebar_heading
+    font-size: 18px
+    &::after
+      content: ''
+      display: block
+      height: 5px
+      width: 20px
+      background-color: $secondary-color
+      margin: 10px 0 30px

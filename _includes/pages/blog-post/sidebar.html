@@ -6,7 +6,7 @@
     <form class="blog_search_form" >
       <!-- Prevent default in inline js -->
       <input type="text" name="search" id="search" class="blog_search_input" placeholder="Search">
-      <button type="submit" role="button" class="blog_search_submit">
+      <button type="submit" class="blog_search_submit">
         {% include icons/search.html %}
       </button>
     </form>
@@ -79,5 +79,63 @@
   </div>
 
   <!-- Popular Post Ends -->
+
+  <!-- Offer Starts -->
+
+  <div class="offer_container">
+    {% for page in site.pages %}
+      {% if page.isOffer %}
+        <a href="../../../../../{{ page.permalink }}" target="_blank">
+          <img src="../../../{{ page.imageFolderPath }}/feature.png" alt="{{ page.watchName }}" class="offer_img">
+          <span class="u-overlay"></span>
+          <div class="content">
+            <p class="u-bold u-primary offer_title"> {{ page.offerDiscount }} Discount</p>
+            <p class="u-bold kicker">Offer is only for <span class="u-capital">Today!</span></p>
+          </div>
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <!-- Offer Ends -->
+
+  <!-- Archive Starts -->
+
+  <div class="post_categories_container">
+    <h3 class="blog_sidebar_heading">Archive</h3>
+    <ul class="archive_list">
+      {% for category in site.categories %}
+        <li class="archive_row">
+          <p class="title">
+            <a href="../../../../../blogs/{{ category[0] }}.html" target="_blank"> {{ category[0] }} </a>
+          </p>
+          <p class="count u-primary u-bold">{{ category[1].size }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+    <h3 class="blog_sidebar_heading">Tags</h3>
+    <p class="tags_container">
+      {% for tag in site.tags %}
+        <a href="#" class="tags"> {{ tag[0] }} </a>
+      {% endfor %}
+    </p>
+  </div>
+
+  <!-- Archive Ends -->
+
+  <!-- NewsLetter Starts -->
+
+  <div class="newsletter_container">
+    <h3 class="blog_sidebar_heading">News Letter</h3>
+    <!-- Prevent default event in js -->
+    <form class="newsletter_form">
+      <input type="email" name="email" required placeholder="Your Email" class="newsletter_form_input">
+      <button class="newsletter_form_submit" type="submit">
+        {% include icons/mail.html %}
+      </button>
+    </form>
+  </div>
+
+  <!-- NewsLetter Ends -->
 
 </div>
