@@ -1,4 +1,7 @@
 <div class="blog_sidebar">
+
+  <!-- Search Form Starts -->
+
   <div class="searchbox_container">
     <form class="blog_search_form" >
       <!-- Prevent default in inline js -->
@@ -8,6 +11,11 @@
       </button>
     </form>
   </div>
+
+  <!-- Search Form Ends -->
+
+  <!-- Company Dashboard Starts -->
+
   <div class="company_dashboard_container">
     <div class="logo_container">
       <a href="../../../../../about.html" target="_blank">
@@ -33,4 +41,43 @@
       </div>
     </div>
   </div>
+
+  <!-- Company Dashboard Ends -->
+
+  <!-- Popular Post Starts  -->
+
+  <div class="popular_post">
+    <h3 class="blog_sidebar_heading">Popular Post</h3>
+
+    {% for post in site.posts limit:3 %}
+      {% for tag in post.tags %}
+        {% if tag == 'Latest' %}
+
+          <div class="row">
+            <div class="col col-1-of-4">
+              <div class="img_container">
+                <img
+                src='../../../../../assets/img/blogs/{{ post.categories }}/{{ post.date | date: "%Y-%m-%d" }}-{{ post.imageName }}-feature.jpg'
+                alt="{{ post.title }} feature"
+                class="popular_post_blog_img" >
+              </div>
+            </div>
+            <div class="col col-3-of-4">
+              <div class="content">
+                <p class="popular_blog_title u-bold">
+                  <a href="{{ post.url }}" target="_blank"> {{ post.title }}  </a>
+                </p>
+                <p class="popular_blog_date"> {{ post.date | date_to_string }} </p>
+              </div>
+            </div>
+          </div>
+
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+
+  </div>
+
+  <!-- Popular Post Ends -->
+
 </div>
