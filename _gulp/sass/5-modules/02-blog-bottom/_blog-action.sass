@@ -1,0 +1,40 @@
+.blog_bottom_action_container
+  margin-top: 1rem
+  width: 100%
+  +flex
+  justify-content: space-between
+  cursor: default
+  .blog_action,
+  .like,
+  .comment
+    +flex
+  .blog_action
+    p
+      color: $heading-color
+    .svg_container
+      height: 1rem
+      margin-right: 1rem
+      svg
+        height: 100%
+    .like
+      margin-right: 40px
+
+  .social_links_wrapper
+    .social_links
+      list-style: none
+      +flex
+      svg
+        height: 1rem
+      li.links
+        text-align: center
+        &:not(:last-of-type)
+          margin-right: 25px
+        a
+          display: block
+          opacity: 1
+          transition: all 0.2s ease
+          min-width: 1rem
+          width: auto
+          &:hover
+            opacity: 0.80
+            transform: scale(1.2)
