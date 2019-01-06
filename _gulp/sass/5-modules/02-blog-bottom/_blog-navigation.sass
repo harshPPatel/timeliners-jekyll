@@ -1,0 +1,33 @@
+.blog_navigation
+  margin-top: 30px
+  width: 100%
+  +flex
+  justify-content: space-between
+  .img_container
+    display: block
+    height: 60px
+    width: 60px
+    overflow: hidden
+    border-radius: 4px
+    margin-right: 1rem
+    img
+      height: 100%
+  .next_post a,
+  .previous_post a
+    display: flex
+    align-items: flex-start
+    text-decoration: none
+    p
+      color: $heading-color
+      line-height: 1.5
+      &.kicker
+        line-height: 1
+        font-size: 1rem
+        opacity: 0.5
+  .next_post a
+    flex-direction: row-reverse
+    .img_container
+      margin-right: 0
+      margin-left: 1rem
+    .content
+      text-align: right
