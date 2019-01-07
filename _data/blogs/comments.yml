@@ -4,52 +4,50 @@ comments:
     commentsCount: 3
     comments:
       - comment: "I liked this post. I like the way you described the product. Cant Wait!!"
-        name: "Emmy Matthew"
+        name: emily
+        fullName: "Emmy Matthew"
         isSubComment: false
       - comment: "Me Too!"
-        name: "Emmy Matthew"
+        name: sam
+        fullName: "Sam Jordan"
         isSubComment: true
       - comment: "I liked this post. I like the way you described the product. Cant Wait!!"
-        name: "Emmy Matthew"
+        name: mike
+        fullName: "Mike Richard"
         isSubComment: false
   - blogTitle: "Renovated Store"
     likes: 15
     commentsCount: 4
     comments:
       - comment: "I liked this post. I like the way you described the product. Cant Wait!!"
-        name: "Emmy Matthew"
+        name: emily
+        fullName: "Emmy Matthew"
         isSubComment: false
       - comment: "Me Too!"
-        name: "Emmy Matthew"
-        isSubComment: true
-      - comment: "I liked this post. I like the way you described the product. Cant Wait!!"
-        name: "Emmy Matthew"
+        name: sam
+        fullName: "Sam Jordan"
         isSubComment: false
       - comment: "I liked this post. I like the way you described the product. Cant Wait!!"
-        name: "Emmy Matthew"
+        name: mike
+        fullName: "Mike Richard"
         isSubComment: true
   - blogTitle: "New Rolex"
     likes: 100
     commentsCount: 7
     comments:
       - comment: "I liked this post. I like the way you described the product. Cant Wait!!"
-        name: "Emmy Matthew"
+        name: emily
+        fullName: "Emmy Matthew"
         isSubComment: false
       - comment: "Me Too!"
-        name: "Emmy Matthew"
+        name: sam
+        fullName: "Sam Jordan"
         isSubComment: true
       - comment: "I liked this post. I like the way you described the product. Cant Wait!!"
-        name: "Emmy Matthew"
+        name: mike
+        fullName: "Mike Richard"
         isSubComment: true
       - comment: "I liked this post. I like the way you described the product. Cant Wait!!"
-        name: "Emmy Matthew"
-        isSubComment: true
-      - comment: "Me Too!"
-        name: "Emmy Matthew"
-        isSubComment: false
-      - comment: "I liked this post. I like the way you described the product. Cant Wait!!"
-        name: "Emmy Matthew"
-        isSubComment: true
-      - comment: "I liked this post. I like the way you described the product. Cant Wait!!"
-        name: "Emmy Matthew"
+        name: mike
+        fullName: "Mike Richard"
         isSubComment: false

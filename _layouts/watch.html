@@ -89,7 +89,7 @@ layout: default
           {% if review.companyName == page.companyName %}
             {% if review.watchName == page.watchName %}
               {% for comment in review.comments %}
-              <div class="comment_box {% if comment.isSubComment == true %} subComment {% endif %}">
+              <div class="comment_box {% if comment.isSubComment %} subComment {% endif %}">
                 <img src="{{ page.imageFolderPath }}/comments/{{ comment.name }}.jpg" alt="{{ comment.name }}">
                 <div class="comment">
                   <p class="comment_text">{{ comment.comment }}</p>
@@ -116,7 +116,7 @@ layout: default
   </div>
 </div>
 
-<div class="watch_reply">
+<div class="reply_form_container">
   <div class="u-container">
     <div class="row col-6-of-12">
       <h5>Leave a Reply</h5>
