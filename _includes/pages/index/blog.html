@@ -2,20 +2,33 @@
   <h2 class="section_heading">Blogs</h2>
   <div class="row">
     {% for post in site.posts limit:3 %}
-      <div class="blog_container">
-        <div class="blog_top">
-          <div class="img_container">
-            <img src='../../../../../assets/img/blogs/{{ post.categories }}/{{ post.date | date: "%Y-%m-%d" }}-{{ post.imageName }}-feature.jpg' alt="{{ post.title }} Feature Image">
+      <div class="col col-1-of-3">
+        <div class="blog_container">
+          <div class="blog_top">
+            <div class="img_container">
+              <!-- Add class long if the hight of image is higher than its width -->
+              <img src='../../../../../assets/img/blogs/{{ post.categories }}/{{ post.date | date: "%Y-%m-%d" }}-{{ post.imageName }}-feature.jpg' alt="{{ post.title }} Feature Image" class="--js-blog-card-image">
+              <div class="u-overlay"></div>
+            </div>
+            <div class="date_container">
+              <p class="date u-capital">{{ post.date | date: "%d" }}</p>
+              <p class="month u-capital">{{ post.date | date: "%b %y" }}</p>
+            </div>
+            <div class="blog_title_container">
+              <h3 class="blog_title">
+                <a href="{{ post.url }}" target="_blank">{{ post.title }}</a>
+              </h3>
+              <p class="blog_author">
+                <span class="u-capital">By :</span> {{ post.author }}
+              </p>
+            </div>
           </div>
-          <div class="date_container">
-            <p class="date">{{ post.date | date: "%d" }}</p>
-            <p class="month">{{ post.date | date: "%b %y" }}</p>
-          </div>
-          <div class="blog_title_container">
-            <h3 class="blog_title">{{ post.title }}</h3>
-            <p class="blog_author">
-              {{ post.author }}
-            </p>
+          <div class="blog_bottom">
+            <p class="blog_text">{{ post.content | strip_html | truncatewords: 16 }}</p>
+            <div class="link_wrappers">
+              <a href="{{ post.url }}" class="u-primary u-bold" target="_blank">Read More</a>
+              <a href="#" class="u-primary u-bold">Share</a>
+            </div>
           </div>
         </div>
       </div>

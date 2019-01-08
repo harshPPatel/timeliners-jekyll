@@ -1,3 +1,4 @@
 # change names and testimonial in watch page carousal
 # change watch features in different watch pages
 # design 404 page
+# Change anchor styling with :link, :active and other 2 pseudo selectors
