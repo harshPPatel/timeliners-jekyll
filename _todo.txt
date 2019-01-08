@@ -2,3 +2,4 @@
 # change watch features in different watch pages
 # design 404 page
 # Change anchor styling with :link, :active and other 2 pseudo selectors
+# change adding odd class in watch features section by manually, convert it using JS
