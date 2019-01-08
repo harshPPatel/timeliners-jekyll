@@ -1,0 +1,32 @@
+.index_instagram
+  +section-padding
+  background-color: $bg-color
+  .flex-row
+    justify-content: center
+  .img_container
+    height: 250px
+    width: 250px
+    margin: 0 auto
+    overflow: hidden
+    position: relative
+    margin-bottom: 1rem
+    margin-right: 1rem
+    margin-left: 0
+    border: 1px solid rgba(#707070, 0.2)
+    opacity: 1
+    transition: opacity 0.3s ease
+    background-color: $white-color
+    &:hover
+      opacity: 0.8
+    &:nth-of-type(4n)
+      margin-right: 0
+    img
+      height: 100%
+      width: auto
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      &.long
+        width: 100%
+        height: auto
