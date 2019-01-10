@@ -2,14 +2,14 @@
 <nav>
   <div class="u-container">
     <div class="logo">
-      <a href="{{ site.data.navigation.navigation[0].url }}">
+      <a href="../../{{ site.data.navigation.navigation[0].url }}">
         {% include logo/logo.html %}
       </a>
     </div>
     <ul class="navigation">
       {% for item in site.data.navigation.navigation %}
         <li class="nav-item {% if item.url == page.permalink %} active {% endif %}">
-          <a href="{{ item.url }}" class="nav-link">{{ item.pageName }}</a>
+          <a href="../../{{ item.url }}" class="nav-link">{{ item.pageName }}</a>
         </li>
       {% endfor %}
     </ul>
