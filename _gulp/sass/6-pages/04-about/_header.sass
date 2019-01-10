@@ -1,0 +1,47 @@
+.about_header
+  height: 95vh
+  +flex
+  &_container
+    max-width: 1500px
+    width: 100%
+    margin: 0 auto
+  .img_container
+    height: 550px
+    width: 550px
+    border-radius: 10px
+    overflow: hidden
+    margin: 0 auto
+    margin-right: 60px
+  .col:first-of-type
+    position: relative
+    &::after
+      display: block
+      width: 1px
+      height: 550px
+      content: ''
+      background-color: rgba(#707070, 0.3)
+      position: absolute
+      right: -10px
+      top: 50%
+      z-index: 1
+      transform: translateY(-50%)
+    img
+      height: 100%
+      width: auto
+  .content
+    margin-left: 60px
+    h1
+      margin-top: -1rem
+      text-transform: capitalize
+      position: relative
+      &::after
+        display: block
+        content: ''
+        background-color: $secondary-color
+        width: 30px
+        height: 8px
+        margin: 20px 0 40px
+    p
+      color: $heading-color
+      font-size: 22px
+      margin-bottom: 50px
