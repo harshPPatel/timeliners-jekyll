@@ -5,3 +5,4 @@
 # change adding odd class in watch features section by manually, convert it using JS
 # replace space from url with %20
 # change imageFodler Category Name, replace space with '-'
+# Add search Function to the website : REFERENCE => 'https://blog.webjeda.com/instant-jekyll-search/'

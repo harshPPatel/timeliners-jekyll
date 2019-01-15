@@ -1,0 +1,71 @@
+.timeline_container
+  width: 100%
+  .timeline_list
+    width: 100%
+    list-style: none
+    position: relative
+  .timeline_period
+    cursor: default
+    position: relative
+    &:not(:first-of-type)
+      margin-top: 1rem
+    &::before
+      content: ''
+      display: block
+      height: calc(110% + 1rem)
+      width: 1px
+      background-color: rgba(#707070, 0.3)
+      position: absolute
+    &:nth-of-type(odd)
+      margin-right: auto
+      text-align: right
+      padding-right: 50px
+      &::before
+        right: 0
+        top: 25px
+      .timeline_period_year
+        &::before
+          top: 25px
+          right: -12px
+    &:nth-of-type(even)
+      margin-left: auto
+      text-align: left
+      padding-left: 50px
+      margin-right: 20px
+      &::before
+        left: 0
+        top: 25px
+      .timeline_period_year
+        &::before
+          top: 25px
+          left: -12px
+    &_year
+      font-size: 2.51rem
+      font-family: $heading-font
+      margin-bottom: 1rem
+      &::before
+        content: ''
+        display: block
+        height: 20px
+        width: 20px
+        position: absolute
+        border: 3px solid $primary-color
+        background-color: $bg-color
+    &_text
+      color: #243238
+      font-size: 1.25rem
+    &_current
+      &::before
+        display: none
+      .timeline_period_year
+        &::before
+          border-color: $secondary-color
+        &::after
+          content: ''
+          display: block
+          height: 13px
+          width: 13px
+          background-color: $secondary-color
+          position: absolute
+          left: -5px
+          top: 32px
