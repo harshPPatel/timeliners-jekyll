@@ -13,10 +13,12 @@ var { parallel,
 
 var sassSource    = 'sass/**/*.sass',
     appJSSource   = 'js/*.js',
-    vendorJSSource= 'js/vendors/*.js';
+    vendorJSSource= 'js/vendors/*.js',
+    jsonSource    = 'json/*.json';
 
 var cssDestination  = '../assets/css/',
-    jsDestination   = '../assets/js/';
+    jsDestination   = '../assets/js/',
+    jsonDestination = '../assets/json/';
 
 task('sass', function(cb) {
   return src(sassSource)
@@ -57,6 +59,13 @@ task('vendorJS', function(cb) {
   );
 })
 
+task('json', function(cb) {
+  return src(jsonSource)
+      .pipe(plumber())
+      .pipe(dest(jsonDestination))
+    cb();  
+})
+
 task('watch', function(cb) {
   browserSync.init({
     server: {
@@ -76,13 +85,15 @@ task('watch', function(cb) {
   watch(sassSource, task('sass'));
   watch(appJSSource, task('appJS'));
   watch(vendorJSSource, task('vendorJS'));
+  watch(jsonSource, task('json'));
   watch([
     '../_site/*.html',
     '../_site/assets/css/*.css',
     '../_site/assets/js/*.js',
-    '../_site/assets/js/CrossBrowserJS/*.js'
+    '../_site/assets/js/CrossBrowserJS/*.js',
+    '../_site/assets/json/*.json'
   ]).on('change', browserSync.reload);
   cb();
 })
 
-exports.default = parallel ( task('sass'), task('appJS'), task('vendorJS'), task('watch'));
+exports.default = parallel ( task('sass'), task('appJS'), task('vendorJS'), task('json'), task('watch'));
