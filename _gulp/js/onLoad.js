@@ -1,4 +1,6 @@
 window.onload = function() {
   addLongClassToImages();
-  setTimeout(productCarousal, 3000); // Setting Timeout to avoid errors
+  if (document.getElementById('watch_header_image_carousal') !== null) {
+    setTimeout(productCarousal, 3000); // Setting Timeout to avoid errors
+  }
 }
