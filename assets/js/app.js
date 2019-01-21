@@ -95,6 +95,7 @@ class Team {
         var myData = JSON.parse(this.responseText);
         Team.setJSONData(myData);
         Team.printJSON();
+        Team.addButtonEvents(myData);
       }
     }
     xhttp.open("GET", this._url, true);
@@ -109,7 +110,6 @@ class Team {
    */
   init() {
     this.fetchJSON();
-    this.addButtonEvents();
   }
 
   /** 
@@ -129,15 +129,65 @@ class Team {
     button.classList.add('active');
   }
 
-  addButtonEvents() {
+  static changeData(index, data) {
+    const nameElement = document.getElementById('--js-member-name');
+    const postElement = document.getElementById('--js-post-name');
+    const kickerElement = document.getElementById('--js-kicker');
+    const socialLinkElements = document.querySelectorAll('.--js-team-web-links');
+    Team.changeImage(index, data);
+    nameElement.innerHTML = data[0].teamMembers[index].name;
+    postElement.innerHTML = data[0].teamMembers[index].post;
+    kickerElement.innerHTML = data[0].teamMembers[index].kicker;
+    Team.changeEmail(index, data);
+    Team.changePhoneNumber(index, data);
+    socialLinkElements.forEach(function(link, index2) {
+      link.href = data[0].teamMembers[index].socialLinks[index2];
+    });
+  }
+
+  /**
+   * Adds click button events to the buttons
+   */
+  static addButtonEvents(data) {
     var buttons = document.querySelectorAll('.--js-team-buttons');
     for (let index = 0; index < buttons.length; index++) {
       buttons[index].onclick = function(event) {
         event.preventDefault();
         Team.removeActiveClass();
         Team.addActiveClass(this);
+        Team.changeData(index, data);
       };
     }
+  }
+
+  /**
+   * Changes the email of member as well as link's href attribute
+   */
+  static changeEmail(index, data) {
+    const email = data[0].teamMembers[index].email;
+    const element = document.querySelector('#--js-email-id a');
+    element.innerHTML = email;
+    element.href = "mailto: " + email;
+  }
+  
+  /**
+   * Formates the phone number and change the number of member as well as link's href
+   */
+  static changePhoneNumber(index, data) {
+    const phone = data[0].teamMembers[index].phone;
+    const countryCode = data[0].teamMembers[index].countryCode;
+    const element = document.querySelector('#--js-phone-id a');
+    var tempPhone = new String(phone.toString(0));
+    
+    var formattedPhone = countryCode + " (" + tempPhone.substring(0, 3) + ") " + tempPhone.substring(3,6) + " " + tempPhone.substring(6,10);
+    element.innerHTML = formattedPhone;
+    element.href = "tel: " + countryCode + phone;
+  }
+
+  static changeImage(index, data) {
+    const element = document.getElementById('--js-team-image');
+    const baseUrl = 'assets/img/team/team-';
+    element.src = baseUrl + index + ".png";
   }
 
 }
