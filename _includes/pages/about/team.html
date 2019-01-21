@@ -5,7 +5,7 @@
         <div class="flex-row">
           <div class="flex-col col-1-of-2">
             <div class="team_img_container">
-              <img src="assets/img/team/team-0.png" alt="Team 1" id="--js-team-image">
+              <img src="assets/img/team/team-0.png" alt="Clay Burt" id="--js-team-image">
             </div>
           </div>
           <div class="flex-col col-1-of-2">
@@ -47,26 +47,13 @@
     </div>
     <div class="team_list_buttons_container" id="--js-team-buttons-container">
       <ul>
-        <li>
-          <a href="#" class="team_list_buttons --js-team-buttons active" data-imageNumber="1">
-            <img src="assets/img/team/team-0.png" alt="team 1">
-          </a>
-        </li>
-        <li>
-          <a href="#" class="team_list_buttons --js-team-buttons" data-imageNumber="2">
-            <img src="assets/img/team/team-1.png" alt="team 1">
-          </a>
-        </li>
-        <li>
-          <a href="#" class="team_list_buttons --js-team-buttons" data-imageNumber="3">
-            <img src="assets/img/team/team-2.png" alt="team 1">
-          </a>
-        </li>
-        <li>
-          <a href="#" class="team_list_buttons --js-team-buttons" data-imageNumber="4">
-            <img src="assets/img/team/team-3.png" alt="team 1">
-          </a>
-        </li>
+        {% for member in site.data.teamMembers.teamMembers %}
+          <li>
+            <a href="#" class="team_list_buttons --js-team-buttons {% if forloop.index0 == 0 %} active {% endif %}" data-imageNumber="1">
+              <img src="assets/img/team/team-{{ forloop.index0 }}.png" alt="{{ member }}">
+            </a>
+          </li>
+        {% endfor %}
       </ul>
     </div>
   </div>

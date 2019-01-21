@@ -6,3 +6,4 @@
 # replace space from url with %20
 # change imageFodler Category Name, replace space with '-'
 # Add search Function to the website : REFERENCE => 'https://blog.webjeda.com/instant-jekyll-search/'
+# alert when some one visit the website on internet explorer that some functionality may not work as u are using very old browser or Internet Explorer.

@@ -28,10 +28,6 @@ class Team {
     this._url = url;
   }
 
-  static printJSON() {
-    console.log(this.teamData);
-  }
-
   /**
    * Save JSON Data to variable
    *
@@ -53,7 +49,6 @@ class Team {
       if (this.readyState == 4 && this.status == 200) {
         var myData = JSON.parse(this.responseText);
         Team.setJSONData(myData);
-        Team.printJSON();
         Team.addButtonEvents(myData);
       }
     }
@@ -83,22 +78,37 @@ class Team {
 
    /**
    * Adds Active class to cliked button
+   *
+   * Parameter(s):
+   * button button to add active class
    */
   static addActiveClass(button) {
     button.classList.add('active');
   }
 
+  /**
+   * Changes data of Members
+   *
+   * Parameter(s):
+   * index index of array
+   * data data got from json
+   * 
+   * Methods(s):
+   * changeImage(index, data);
+   * changeEmail(index, data);
+   * changePhoneNumber(index, data);
+   */
   static changeData(index, data) {
     const nameElement = document.getElementById('--js-member-name');
     const postElement = document.getElementById('--js-post-name');
     const kickerElement = document.getElementById('--js-kicker');
     const socialLinkElements = document.querySelectorAll('.--js-team-web-links');
     Team.changeImage(index, data);
+    Team.changeEmail(index, data);
+    Team.changePhoneNumber(index, data);
     nameElement.innerHTML = data[0].teamMembers[index].name;
     postElement.innerHTML = data[0].teamMembers[index].post;
     kickerElement.innerHTML = data[0].teamMembers[index].kicker;
-    Team.changeEmail(index, data);
-    Team.changePhoneNumber(index, data);
     socialLinkElements.forEach(function(link, index2) {
       link.href = data[0].teamMembers[index].socialLinks[index2];
     });
@@ -106,6 +116,10 @@ class Team {
 
   /**
    * Adds click button events to the buttons
+   * 
+   * Parameter(s):
+   * data data fetched from JSON
+   * 
    */
   static addButtonEvents(data) {
     var buttons = document.querySelectorAll('.--js-team-buttons');
@@ -121,6 +135,11 @@ class Team {
 
   /**
    * Changes the email of member as well as link's href attribute
+   * 
+   * Parameter(s):
+   * index index of array
+   * data data fetched form JSON
+   * 
    */
   static changeEmail(index, data) {
     const email = data[0].teamMembers[index].email;
@@ -131,6 +150,11 @@ class Team {
   
   /**
    * Formates the phone number and change the number of member as well as link's href
+   * 
+   * Parameter(s):
+   * index index of array
+   * data data fetched form JSON
+   * 
    */
   static changePhoneNumber(index, data) {
     const phone = data[0].teamMembers[index].phone;
@@ -143,10 +167,19 @@ class Team {
     element.href = "tel: " + countryCode + phone;
   }
 
+  /**
+   * change the image of the team and the alternative text
+   * 
+   * Parameter(s):
+   * index index of array
+   * data data fetched form JSON
+   * 
+   */
   static changeImage(index, data) {
     const element = document.getElementById('--js-team-image');
     const baseUrl = 'assets/img/team/team-';
     element.src = baseUrl + index + ".png";
+    element.alt = data[0].teamMembers[index].name;
   }
 
 }
