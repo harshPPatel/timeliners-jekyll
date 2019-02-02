@@ -1,0 +1,18 @@
+.brands_section
+  .flex-row
+    align-items: stretch
+  .flex-col
+    align-content: center
+    text-align: center
+    +flex
+    img
+      max-width: 175px
+      width: 100%
+      filter: grayscale(100%)
+      opacity: 0.8
+      transform: scale(1)
+      transition: all 0.2s ease-out
+    &:hover
+      img
+        transform: scale(1.08)
+        filter: grayscale(0%)
