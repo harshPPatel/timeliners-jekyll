@@ -1,0 +1,41 @@
+.about_newsletter
+  +section-padding
+  background: url(../img/about-newsletter-bg.jpg) center center no-repeat
+  background-size: cover
+  position: relative
+  .u-container
+    position: relative
+    z-index: 999
+  h6
+    margin-bottom: -5px
+  h4
+    font-size: 2rem
+    color: $white-color
+    font-family: $heading-font
+  .kicker
+    margin-top: -5px
+  .flex-col
+    &:first-of-type
+      display: flex
+      justify-content: center
+      align-items: center
+
+  #about_newsletter_form
+    display: flex
+    align-items: center
+    justify-content: space-between
+    input[type="email"],
+    button
+      height: 50px!important
+      border: none
+      outline: none
+    input[type="email"]
+      width: calc(65% - 1rem)
+      text-align: center
+      border-radius: 5px
+      padding: 0 1rem
+      &::placeholder
+        color: rgba(#777777, 0.7)
+    button
+      width: 35%
+      margin-bottom: 0

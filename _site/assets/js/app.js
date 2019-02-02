@@ -27,7 +27,6 @@ window.onload = function() {
     setTimeout(productCarousal, 3000); // Setting Timeout to avoid errors
   }
 }
-
 // Function to initialize product carousal in watch page
 
 var productCarousal = $(function() {
