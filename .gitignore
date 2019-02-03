@@ -116,4 +116,7 @@ $RECYCLE.BIN/
 # VS CODE setting
 .vscode
 
+# idea WorkSpace setting
+.idea
+
 # End of https://www.gitignore.io/api/node,jekyll,windows
