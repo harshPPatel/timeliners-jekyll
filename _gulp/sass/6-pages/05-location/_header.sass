@@ -1,0 +1,50 @@
+.location_header
+  height: 95vh
+  position: relative
+  +flex
+  &::after
+    content: ''
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    background: url(../img/location-header.jpg) center center no-repeat
+    background-size: cover
+    opacity: 0.1
+  &_container
+    max-width: 1500px
+    width: 100%
+    margin: 0 auto
+    z-index: 1
+    .image_container
+      height: 550px
+      width: 550px
+      border-radius: 10px
+      overflow: hidden
+      margin: 0 auto
+      margin-right: 60px
+      border: 1px solid rgba(#707070, 0.2)
+    .col:first-of-type
+      position: relative
+      &::after
+        display: block
+        width: 1px
+        height: 400px
+        content: ''
+        background-color: rgba(#707070, 0.3)
+        position: absolute
+        right: -10px
+        top: 50%
+        z-index: 1
+        transform: translateY(-50%)
+      img
+        height: 100%
+        width: auto
+    .text_content
+      margin-left: 60px
+      p
+        color: $heading-color
+        font-size: 22px
+        margin-bottom: 60px

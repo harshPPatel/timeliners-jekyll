@@ -11,3 +11,5 @@
 # Blog : Style blog content elements
 # Add favicon to it
 # Add all weight fonts
+# min height for headers which uses 95vh or 100vh
+# location / about header special container move in grid sass
