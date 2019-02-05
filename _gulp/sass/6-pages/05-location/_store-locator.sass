@@ -1,0 +1,58 @@
+.location_store_locator
+  position: relative
+  width: 100vw
+  .map_container
+    height: 550px
+    width: 100%
+    iframe
+      height: 100%
+      width: 100%
+  .cover_area
+    background-color: $bg-color
+    height: 550px
+    width: 100%
+  .store_locator
+    background-color: $white-color
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    padding: 50px 0
+    height: auto
+    display: block
+    box-shadow: 0 0 15px rgba($black-color, 0.16)
+    h2
+      margin-bottom: 30px
+      padding-top: 10px
+    form#store_locator_form
+      display: block
+      margin: -25px auto 0
+      .flex-col
+        text-align: center
+      input
+        display: block
+        background-color: rgba($bg-color, 0.7)
+        height: 50px
+        width: 90%
+        padding: 0 10px
+        border: none
+        outline: none
+        margin-bottom: 40px
+        border-bottom: 2px solid rgba($primary-color, 0.5)
+        border-radius: 5px
+        transition: all 0.2s ease
+        color: $heading-color
+        &::placeholder
+          color: #243238
+          opacity: 0.5
+        &[name="addressLine2"]
+          width: 95%
+        &:focus
+          background-color: rgba($bg-color, 1)
+          border-bottom-color: rgba($primary-color, 1)
+      .submit_row
+        justify-content: flex-end
+        button
+          outline: none
+          margin-right: 5%
+          margin-top: 10px

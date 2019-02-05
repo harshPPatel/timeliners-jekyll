@@ -15,7 +15,6 @@
 <script src="assets/js/CrossBrowserJS/selectivizr.js"></script>
 <script src="assets/js/CrossBrowserJS/respond.js"></script>
 <![endif]-->
-
 </head>
 <body>
 
@@ -109,6 +108,54 @@
         </div>
     </div>
 </div>
+</div>
+
+<div class="location_store_locator">
+    <div class="map_container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81394.27823021426!2d-74.01021048621185!3d40.69967631097581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sca!4v1549344825800" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+<div class="cover_area">
+    <div class="store_locator u-container">
+        <h2 class="section_heading">Store Locator</h2>
+        <form id="store_locator_form" class="col-6-of-12">
+            <div class="flex-row">
+                <div class="flex-col col-1-of-2">
+                    <input type="text" name="streetNumber" id="streetNumber" placeholder="Street Number">
+                </div>
+                <div class="flex-col col-1-of-2">
+                    <input type="text" name="streetName" id="streetName" placeholder="Street Name">
+                </div>
+            </div>
+            <div class="flex-row">
+                <div class="flex-col col-1-of-1">
+                    <input type="text" name="addressLine2" id="address_line-2" placeholder="Address Line 2">
+                </div>
+            </div>
+            <div class="flex-row">
+                <div class="flex-col col-1of-2">
+                    <input type="text" name="city" id="city" placeholder="City">
+                </div>
+                <div class="flex-col col-1of-2">
+                    <input type="text" name="province" id="province" placeholder="Province">
+                </div>
+            </div>
+            <div class="flex-row">
+                <div class="flex-col col-1-of-2">
+                    <input type="text" name="country" id="country" placeholder="Country">
+                </div>
+                <div class="flex-col col-1-of-2">
+                    <input type="text" name="postalCode" id="postal_code" placeholder="Postal Code">
+                </div>
+            </div>
+            <div class="flex-row submit_row">
+                <button type="submit" class="btn btn_primary_solid">Locate</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
 </div>
 
   <!-- Footer Starts -->
