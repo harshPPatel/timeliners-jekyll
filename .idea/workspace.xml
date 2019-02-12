@@ -4,16 +4,9 @@
     <list default="true" id="f634dc8b-3a80-467a-aea4-bf9fe437a474" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_gulp/sass/6-pages/05-location/_05-location-dir.sass" beforeDir="false" afterPath="$PROJECT_DIR$/_gulp/sass/6-pages/05-location/_05-location-dir.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/blog-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/blog-index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/locations.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/locations.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/sign-in.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/sign-in.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/watch-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/watch-index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/location.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/location.html" afterDir="false" />
     </list>
@@ -27,14 +20,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.39726028">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/_gulp/sass/6-pages/05-location/_store-locator.sass">
+            <entry file="file://$PROJECT_DIR$/_gulp/sass/6-pages/05-location/_schedule.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="468">
-                  <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+                <state relative-caret-position="300">
+                  <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
                 </state>
               </provider>
             </entry>
@@ -42,15 +35,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+        <leaf>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/_includes/pages/location/store-locator.html">
+            <entry file="file://$PROJECT_DIR$/_includes/pages/location/schedule.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="436">
-                  <caret line="38" column="66" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="66" />
-                  <folding>
-                    <element signature="n#style#0;n#iframe#0;n#div#0;n#!!top" expanded="true" />
-                  </folding>
+                <state relative-caret-position="530">
+                  <caret line="24" column="63" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
                 </state>
               </provider>
             </entry>
@@ -89,12 +79,17 @@
         <option value="$PROJECT_DIR$/_includes/pages/location/header.html" />
         <option value="$PROJECT_DIR$/_gulp/sass/6-pages/05-location/_header.sass" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/pages/location.html" />
-        <option value="$PROJECT_DIR$/_gulp/sass/6-pages/05-location/_05-location-dir.sass" />
         <option value="$PROJECT_DIR$/_layouts/default.html" />
         <option value="$PROJECT_DIR$/_includes/head.html" />
         <option value="$PROJECT_DIR$/_includes/pages/location/store-locator.html" />
         <option value="$PROJECT_DIR$/_gulp/sass/6-pages/05-location/_store-locator.sass" />
+        <option value="$PROJECT_DIR$/pages/location.html" />
+        <option value="$PROJECT_DIR$/_data/schedule.yml" />
+        <option value="$PROJECT_DIR$/_includes/icons/cross.html" />
+        <option value="$PROJECT_DIR$/_includes/icons/true.html" />
+        <option value="$PROJECT_DIR$/_includes/pages/location/schedule.html" />
+        <option value="$PROJECT_DIR$/_gulp/sass/6-pages/05-location/_05-location-dir.sass" />
+        <option value="$PROJECT_DIR$/_gulp/sass/6-pages/05-location/_schedule.sass" />
       </list>
     </option>
   </component>
@@ -123,6 +118,17 @@
             <path>
               <item name="Timeliners" type="b2602c69:ProjectViewProjectNode" />
               <item name="Timeliners" type="462c0819:PsiDirectoryNode" />
+              <item name="_data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Timeliners" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Timeliners" type="462c0819:PsiDirectoryNode" />
+              <item name="_data" type="462c0819:PsiDirectoryNode" />
+              <item name="watches" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Timeliners" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Timeliners" type="462c0819:PsiDirectoryNode" />
               <item name="_gulp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -130,13 +136,6 @@
               <item name="Timeliners" type="462c0819:PsiDirectoryNode" />
               <item name="_gulp" type="462c0819:PsiDirectoryNode" />
               <item name="sass" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Timeliners" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Timeliners" type="462c0819:PsiDirectoryNode" />
-              <item name="_gulp" type="462c0819:PsiDirectoryNode" />
-              <item name="sass" type="462c0819:PsiDirectoryNode" />
-              <item name="1-tools" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Timeliners" type="b2602c69:ProjectViewProjectNode" />
@@ -162,14 +161,13 @@
               <item name="Timeliners" type="b2602c69:ProjectViewProjectNode" />
               <item name="Timeliners" type="462c0819:PsiDirectoryNode" />
               <item name="_includes" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="icons" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Timeliners" type="b2602c69:ProjectViewProjectNode" />
               <item name="Timeliners" type="462c0819:PsiDirectoryNode" />
               <item name="_includes" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="about" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Timeliners" type="b2602c69:ProjectViewProjectNode" />
@@ -177,6 +175,13 @@
               <item name="_includes" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="location" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Timeliners" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Timeliners" type="462c0819:PsiDirectoryNode" />
+              <item name="_includes" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="watch" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Timeliners" type="b2602c69:ProjectViewProjectNode" />
@@ -210,6 +215,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GitHub Projects\Timeliners\_includes\icons" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -238,16 +248,15 @@
       <workItem from="1549154246762" duration="1538000" />
       <workItem from="1549159257758" duration="791000" />
       <workItem from="1549341902306" duration="3591000" />
-      <workItem from="1549386691915" duration="1185000" />
+      <workItem from="1549386691915" duration="3662000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12214000" />
+    <option name="totallyTimeSpent" value="14691000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18440464" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -415,20 +424,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/location.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_gulp/sass/6-pages/05-location/_05-location-dir.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/default.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
@@ -448,6 +443,55 @@
         <state relative-caret-position="-9004" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_gulp/sass/6-pages/05-location/_store-locator.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/icons/cross.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/icons/true.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/tags.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/navigation.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/categories.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/teamMembers.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/instagram.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/watches/reviews.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-401" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/socialLinks.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/pages/watch/comments.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-293" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/pages/location/store-locator.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="436">
@@ -458,10 +502,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_gulp/sass/6-pages/05-location/_store-locator.sass">
+    <entry file="file://$PROJECT_DIR$/pages/location.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+        <state relative-caret-position="420">
+          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/schedule.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="24" column="16" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_gulp/sass/6-pages/05-location/_05-location-dir.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_gulp/sass/6-pages/05-location/_schedule.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/pages/location/schedule.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="24" column="63" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
         </state>
       </provider>
     </entry>

@@ -13,3 +13,6 @@
 # Add all weight fonts
 # min height for headers which uses 95vh or 100vh
 # location / about header special container move in grid sass
+# add references like images used in background of location and about page in readme file and add in website if needed
+# compress images
+# replace links with site.url when you gets your domain

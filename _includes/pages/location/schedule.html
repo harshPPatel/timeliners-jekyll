@@ -1,0 +1,34 @@
+<div class="u-container">
+    <h2 class="section_heading">Our Schedule</h2>
+
+    <div class="table_container">
+        <table id="schedule">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Opening Time</th>
+                    <th>Closing Time</th>
+                    <th>Special Offers?</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for day in site.data.schedule.schedule %}
+                    <tr>
+                        <td>{{ day.day }}</td>
+                        <td>{{ day.openingTime }}</td>
+                        <td>{{ day.closingTime }}</td>
+                        <td>
+                            <div class="svg_container">
+                                {% if day.specialOffer %}
+                                    {% include icons/true.html %}
+                                {% else %}
+                                    {% include icons/cross.html %}
+                                {% endif %}
+                            </div>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
