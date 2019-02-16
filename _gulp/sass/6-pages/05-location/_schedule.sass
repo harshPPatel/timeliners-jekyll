@@ -9,13 +9,33 @@
       width: 100%
       text-align: center
       font-size: 1rem
+      border-collapse: separate
       tr
         height: 50px
         width: 100%
     .svg_container
-      height: 16px
-      width: auto
+      width: 18px
       overflow: hidden
+      margin: 0 auto
       svg
-        height: 100%
-        width: auto
+        width: 100%
+        height: auto
+    thead
+      tr
+        background-color: $primary-color
+        color: $white-color
+    tbody
+      tr
+        color: $heading-color
+        background-color: #FFFFFF
+        transition: all 0.2s ease
+        cursor: default
+        &:hover
+          background-color: #F7F7F7
+  .additional_info
+    font-style: italic
+    text-align: right
+    color: $heading-color
+    opacity: 0.6
+    cursor: default
+    margin-top: 1rem

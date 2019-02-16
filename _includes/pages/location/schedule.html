@@ -14,7 +14,7 @@
             <tbody>
                 {% for day in site.data.schedule.schedule %}
                     <tr>
-                        <td>{{ day.day }}</td>
+                        <td class="u-bold">{{ day.day }}</td>
                         <td>{{ day.openingTime }}</td>
                         <td>{{ day.closingTime }}</td>
                         <td>
@@ -30,5 +30,6 @@
                 {% endfor %}
             </tbody>
         </table>
+        <p class="additional_info">*Special Offers on every end of month</p>
     </div>
 </div>

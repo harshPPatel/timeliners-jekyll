@@ -3,12 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="f634dc8b-3a80-467a-aea4-bf9fe437a474" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_gulp/sass/6-pages/05-location/_05-location-dir.sass" beforeDir="false" afterPath="$PROJECT_DIR$/_gulp/sass/6-pages/05-location/_05-location-dir.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_gulp/sass/6-pages/05-location/_schedule.sass" beforeDir="false" afterPath="$PROJECT_DIR$/_gulp/sass/6-pages/05-location/_schedule.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/pages/location/schedule.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/pages/location/schedule.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/locations.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/locations.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/location.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/location.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,8 +26,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/_gulp/sass/6-pages/05-location/_schedule.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+                <state relative-caret-position="647">
+                  <caret line="40" column="20" lean-forward="true" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
                 </state>
               </provider>
             </entry>
@@ -35,12 +35,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/_includes/pages/location/schedule.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="530">
-                  <caret line="24" column="63" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
+                <state relative-caret-position="600">
+                  <caret line="32" column="72" selection-start-line="32" selection-start-column="72" selection-end-line="32" selection-end-column="72" />
                 </state>
               </provider>
             </entry>
@@ -87,8 +87,8 @@
         <option value="$PROJECT_DIR$/_data/schedule.yml" />
         <option value="$PROJECT_DIR$/_includes/icons/cross.html" />
         <option value="$PROJECT_DIR$/_includes/icons/true.html" />
-        <option value="$PROJECT_DIR$/_includes/pages/location/schedule.html" />
         <option value="$PROJECT_DIR$/_gulp/sass/6-pages/05-location/_05-location-dir.sass" />
+        <option value="$PROJECT_DIR$/_includes/pages/location/schedule.html" />
         <option value="$PROJECT_DIR$/_gulp/sass/6-pages/05-location/_schedule.sass" />
       </list>
     </option>
@@ -107,7 +107,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -208,6 +207,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -249,16 +249,18 @@
       <workItem from="1549159257758" duration="791000" />
       <workItem from="1549341902306" duration="3591000" />
       <workItem from="1549386691915" duration="3662000" />
+      <workItem from="1550270682928" duration="80000" />
+      <workItem from="1550334471887" duration="2276000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14691000" />
+    <option name="totallyTimeSpent" value="17047000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18440464" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18440464" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -270,7 +272,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.18283166" />
+      <window_info active="true" anchor="bottom" x="304" y="485" width="969" height="420" id="Terminal" order="9" visible="true" weight="0.14381272" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -523,17 +525,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_gulp/sass/6-pages/05-location/_schedule.sass">
+    <entry file="file://$PROJECT_DIR$/_includes/pages/location/schedule.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        <state relative-caret-position="600">
+          <caret line="32" column="72" selection-start-line="32" selection-start-column="72" selection-end-line="32" selection-end-column="72" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/pages/location/schedule.html">
+    <entry file="file://$PROJECT_DIR$/_gulp/sass/6-pages/05-location/_schedule.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="24" column="63" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
+        <state relative-caret-position="647">
+          <caret line="40" column="20" lean-forward="true" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
         </state>
       </provider>
     </entry>
