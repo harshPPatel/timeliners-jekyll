@@ -3,12 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="f634dc8b-3a80-467a-aea4-bf9fe437a474" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_gulp/sass/5-modules/_5-modules-dir.sass" beforeDir="false" afterPath="$PROJECT_DIR$/_gulp/sass/5-modules/_5-modules-dir.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_gulp/js/teamSlides.js" beforeDir="false" afterPath="$PROJECT_DIR$/_gulp/js/teamSlides.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_gulp/sass/3-basics/_utilities.sass" beforeDir="false" afterPath="$PROJECT_DIR$/_gulp/sass/3-basics/_utilities.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_gulp/sass/6-pages/_6-pages-dir.sass" beforeDir="false" afterPath="$PROJECT_DIR$/_gulp/sass/6-pages/_6-pages-dir.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/pages/sign-in.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/pages/sign-in.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/sign-in.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/sign-in.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_todo.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/sign-in.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/sign-in.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,47 +31,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/_includes/pages/sign-in.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="642">
-                  <caret line="41" column="61" selection-start-line="41" selection-start-column="61" selection-end-line="41" selection-end-column="61" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/_includes/pages/location/store-locator.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1140">
-                  <caret line="38" column="66" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="66" />
-                  <folding>
-                    <element signature="n#style#0;n#iframe#0;n#div#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/_gulp/sass/6-pages/05-location/_store-locator.sass">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="156">
-                  <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="46" selection-end-column="22" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/_gulp/sass/5-modules/_forms.sass">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/_layouts/default.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="5" column="6" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+                <state relative-caret-position="379">
+                  <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
                 </state>
               </provider>
             </entry>
@@ -76,10 +42,10 @@
       <split-second>
         <leaf>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/_layouts/default.html">
+            <entry file="file://$PROJECT_DIR$/_gulp/sass/6-pages/06-sign-in/_body.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret selection-end-line="17" selection-end-column="7" />
+                <state relative-caret-position="489">
+                  <caret line="71" column="16" selection-start-line="71" selection-start-column="16" selection-end-line="71" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
@@ -101,7 +67,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_gulp/js/onLoad.js" />
         <option value="$PROJECT_DIR$/_gulp/js/TeamClass.js" />
         <option value="$PROJECT_DIR$/_includes/pages/about/newsletter.html" />
         <option value="$PROJECT_DIR$/_gulp/sass/6-pages/04-about/_newsletter.sass" />
@@ -113,8 +78,6 @@
         <option value="$PROJECT_DIR$/_gulp/sass/4-layout/_brands.sass" />
         <option value="$PROJECT_DIR$/_gulp/sass/6-pages/04-about/_header.sass" />
         <option value="$PROJECT_DIR$/_gulp/sass/3-basics/_typography.sass" />
-        <option value="$PROJECT_DIR$/_gulp/sass/6-pages/_6-pages-dir.sass" />
-        <option value="$PROJECT_DIR$/_todo.txt" />
         <option value="$PROJECT_DIR$/_includes/pages/location/header.html" />
         <option value="$PROJECT_DIR$/_gulp/sass/6-pages/05-location/_header.sass" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -133,7 +96,15 @@
         <option value="$PROJECT_DIR$/pages/sign-in.html" />
         <option value="$PROJECT_DIR$/_gulp/sass/5-modules/_forms.sass" />
         <option value="$PROJECT_DIR$/_gulp/sass/5-modules/_5-modules-dir.sass" />
+        <option value="$PROJECT_DIR$/_gulp/js/onLoad.js" />
+        <option value="$PROJECT_DIR$/_gulp/js/teamSlides.js" />
+        <option value="$PROJECT_DIR$/_gulp/sass/6-pages/_6-pages-dir.sass" />
+        <option value="$PROJECT_DIR$/_gulp/sass/6-pages/06-sign-in/_06-sign-in-dir.sass" />
+        <option value="$PROJECT_DIR$/_gulp/js/basic.js" />
+        <option value="$PROJECT_DIR$/_todo.txt" />
         <option value="$PROJECT_DIR$/_includes/pages/sign-in.html" />
+        <option value="$PROJECT_DIR$/_gulp/sass/3-basics/_utilities.sass" />
+        <option value="$PROJECT_DIR$/_gulp/sass/6-pages/06-sign-in/_body.sass" />
       </list>
     </option>
   </component>
@@ -151,6 +122,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -167,6 +139,12 @@
               <item name="Timeliners" type="b2602c69:ProjectViewProjectNode" />
               <item name="Timeliners" type="462c0819:PsiDirectoryNode" />
               <item name="_gulp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Timeliners" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Timeliners" type="462c0819:PsiDirectoryNode" />
+              <item name="_gulp" type="462c0819:PsiDirectoryNode" />
               <item name="sass" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -174,7 +152,7 @@
               <item name="Timeliners" type="462c0819:PsiDirectoryNode" />
               <item name="_gulp" type="462c0819:PsiDirectoryNode" />
               <item name="sass" type="462c0819:PsiDirectoryNode" />
-              <item name="5-modules" type="462c0819:PsiDirectoryNode" />
+              <item name="3-basics" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Timeliners" type="b2602c69:ProjectViewProjectNode" />
@@ -189,7 +167,7 @@
               <item name="_gulp" type="462c0819:PsiDirectoryNode" />
               <item name="sass" type="462c0819:PsiDirectoryNode" />
               <item name="6-pages" type="462c0819:PsiDirectoryNode" />
-              <item name="05-location" type="462c0819:PsiDirectoryNode" />
+              <item name="06-sign-in" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Timeliners" type="b2602c69:ProjectViewProjectNode" />
@@ -234,13 +212,18 @@
             <path>
               <item name="Timeliners" type="b2602c69:ProjectViewProjectNode" />
               <item name="Timeliners" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="json" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Timeliners" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Timeliners" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -286,11 +269,12 @@
       <workItem from="1550334471887" duration="2276000" />
       <workItem from="1551488057666" duration="164000" />
       <workItem from="1551488334473" duration="3441000" />
+      <workItem from="1551807882617" duration="2614000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20652000" />
+    <option name="totallyTimeSpent" value="23266000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -318,37 +302,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/img/owner.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_gulp/js/onLoad.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_gulp/js/TeamClass.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1836">
-          <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/pages/watch/reply-form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/pages/about/newsletter.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_gulp/sass/6-pages/04-about/_newsletter.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
@@ -409,13 +362,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_gulp/sass/6-pages/_6-pages-dir.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_gulp/sass/6-pages/04-about/_header.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-144" />
@@ -445,13 +391,6 @@
     <entry file="file://D:/Design Projects/Timeliners/01-Assets/snazzy-maps-example-xxxxxxxxxxx-style.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-72" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_todo.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="14" column="61" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_gulp/sass/6-pages/05-location/_header.sass">
@@ -557,27 +496,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/default.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="6" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/sign-in.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_gulp/sass/6-pages/05-location/_store-locator.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="46" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_gulp/sass/5-modules/_5-modules-dir.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -585,10 +503,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_gulp/sass/5-modules/_forms.sass">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms2.rnc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        <state relative-caret-position="220">
+          <caret line="468" column="22" selection-start-line="468" selection-start-column="22" selection-end-line="468" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -602,17 +520,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms2.rnc">
+    <entry file="file://$PROJECT_DIR$/_gulp/sass/6-pages/05-location/_store-locator.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="468" column="22" selection-start-line="468" selection-start-column="22" selection-end-line="468" selection-end-column="22" />
+        <state relative-caret-position="960">
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="46" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_gulp/sass/5-modules/_forms.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_gulp/js/product-carousal.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_gulp/js/teamSlides.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_gulp/sass/6-pages/_6-pages-dir.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/default.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_gulp/sass/6-pages/06-sign-in/_06-sign-in-dir.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/sign-in.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_gulp/js/onLoad.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_gulp/js/basic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" column="46" lean-forward="true" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_todo.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_includes/pages/sign-in.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="642">
-          <caret line="41" column="61" selection-start-line="41" selection-start-column="61" selection-end-line="41" selection-end-column="61" />
+        <state relative-caret-position="379">
+          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_gulp/sass/3-basics/_utilities.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_gulp/sass/6-pages/06-sign-in/_body.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="71" column="16" selection-start-line="71" selection-start-column="16" selection-end-line="71" selection-end-column="16" />
         </state>
       </provider>
     </entry>

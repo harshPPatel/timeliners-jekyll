@@ -16,3 +16,4 @@
 # add references like images used in background of location and about page in readme file and add in website if needed
 # compress images
 # replace links with site.url when you gets your domain
+# Add style to add long class effect to the image of sign  in page when screen is loaded on small screen
