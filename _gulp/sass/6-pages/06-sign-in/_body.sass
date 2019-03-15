@@ -15,7 +15,7 @@
         &:last-of-type
           +flex
           width: 100%
-          div
+          div#container
             width: 100%
             padding-left: 100px
     form
@@ -35,23 +35,6 @@
         position: absolute
         left: 50%
         transform: translateX(-50%)
-    li
-      display: block
-      a
-        display: block
-        height: 50px
-        width: 50px
-        border-radius: 50px
-  .svg_container
-    height: 100%
-    width: 100%
-    overflow: hidden
-    +flex
-    justify-content: center
-    svg
-      width: 50%
-      max-height: 50%
-      height: auto
   .or
     margin-top: 50px
     position: relative
@@ -68,5 +51,45 @@
     margin: 30px 0
     list-style: none
     +flex
-    justify-content: center
     width: 500px
+    li
+      display: block
+      height: 50px
+      width: 50px
+      border-radius: 50px
+      &:not(:last-of-type)
+        margin-right: 30px
+      &.facebook
+        background-color: $facebook-color
+      &.google_plus
+        background-color: $google-plus-color
+      &.twitter
+        background-color: $twitter-color
+      &.linked_in
+        background-color: $linked-in-color
+      a
+        display: block
+        height: 100%
+        width: 100%
+        .svg_container
+          padding: 0
+          margin: 0
+          height: 50px
+          width: 50px
+          position: relative
+          svg
+            display: block
+            max-width: 50%
+            max-height: 50%
+            height: auto
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            path
+              fill: $white-color!important
+  a.sign_up_link
+    display: block
+    margin-top: 10px
+    text-decoration: underline
+    letter-spacing: 1px
