@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
+
+  <!-- Head Starts Here -->
+  <head>
+    <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<!-- Title Of the Page -->
 <title> Timeliners </title>
+
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Source+Sans+Pro:400,400i,700|Hammersmith+One" rel="stylesheet">
 
 <!-- Custom Stylings -->
-<link rel="stylesheet" href="assets/css/styles.css">
-<!--[if lt IE 9]>
-<script src="assets/js/CrossBrowserJS/html5shiv.js"></script>
-<script src="assets/js/CrossBrowserJS/selectivizr.js"></script>
-<script src="assets/js/CrossBrowserJS/respond.js"></script>
-<![endif]-->
-</head>
-<body>
+<link rel="stylesheet" href="http://localhost:3000/assets/css/styles.css">
 
-  <!-- Navbar Starts -->
+<!-- Adding cross browser compatiblity scripts if the browser is Internet Explorer and version is less than IE9 -->
+
+<!--[if lt IE 9]>
+<script src="http://localhost:3000/assets/js/CrossBrowserJS/html5shiv.js"></script>
+<script src="http://localhost:3000/assets/js/CrossBrowserJS/selectivizr.js"></script>
+<script src="http://localhost:3000/assets/js/CrossBrowserJS/respond.js"></script>
+<![endif]-->
+  </head>
+  <!-- Head Ends Here -->
+
+  <body>
+    <!-- Header Starts Here -->
+    <header>
+      <!-- Navbar Starts Here -->
 <nav>
   <div class="u-container">
     <div class="logo">
-      <a href="index.html">
+      <a href="http://localhost:3000">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1109.08 285.19">
   <g>
     <path d="M154.54,214.27V191.91h35.89c-1-19.61-8.83-37.44-20.44-46.25l-4.64-3.52,4.64-3.53C181.6,129.8,189.4,112,190.41,92.37H154.54V70.92H205V84.44h-5.6v3.5c0,22-7.54,42.21-20,54.19,12.41,12,20,32.18,20,54.2v4.42H205v13.51Zm0-24.78V99.39H181.1c-.77,14.88-6.69,28.42-15.52,35.11a13,13,0,0,0-3.53,2.68c-4.17,6-4.4,27.75-4.4,28.71a16.43,16.43,0,0,1,9.44,4.52c11.32,10.34,14.61,11.56,15,19.07Z" style="fill: #f36b30"/>
@@ -55,39 +66,56 @@
       </a>
     </div>
     <ul class="navigation">
-      
         <li class="nav-item  active ">
-          <a href="index.html" class="nav-link">Home</a>
+          <a href="http://localhost:3000/index.html" class="nav-link">
+            Home
+          </a>
         </li>
       
         <li class="nav-item ">
-          <a href="about.html" class="nav-link">About Us</a>
+          <a href="http://localhost:3000/about.html" class="nav-link">
+            About Us
+          </a>
         </li>
       
         <li class="nav-item ">
-          <a href="blog-index.html" class="nav-link">Blogs</a>
+          <a href="http://localhost:3000/blog-index.html" class="nav-link">
+            Blogs
+          </a>
         </li>
       
         <li class="nav-item ">
-          <a href="locations.html" class="nav-link">Locations</a>
+          <a href="http://localhost:3000/locations.html" class="nav-link">
+            Locations
+          </a>
         </li>
       
         <li class="nav-item ">
-          <a href="watch-index.html" class="nav-link">Watches</a>
-        </li>
-      
-        <li class="nav-item ">
-          <a href="sign-in.html" class="nav-link">Sign In</a>
+          <a href="http://localhost:3000/sign-in.html" class="nav-link">
+            Sign In
+          </a>
         </li>
       
     </ul>
   </div>
 </nav>
-<!-- Navbar Ends -->
+<!-- Navbar Ends Here -->
 
+    </header>
+    <!-- Header Ends Here -->
 
-  <header class="index_header">
-  <video autoplay muted loop class="index_header_video" src="assets/video/header-bg.mp4" type="video/mp4"></video>
+    <!-- Main Starts Here -->
+    <main>
+      <!-- Header Starts Here -->
+<div class="index_header">
+  <video 
+  autoplay 
+  muted 
+  loop 
+  class="index_header_video" 
+  src="http://localhost:3000/assets/video/header-bg.mp4" 
+  type="video/mp4">
+</video>
 <div class="u-overlay">
   <div class="u-container">
     <h1>Timeliners</h1>
@@ -97,38 +125,55 @@
       selling watches.
     </p>
     <div class="btn-wrapper">
-      <a href="watch-index.html" class="btn btn_primary_solid">Buy Now !</a>
-      <a href="about.html" class="btn btn_white_ghost">Learn More</a>
+      <a href="http://localhost:3000/watch-index.html" class="btn btn_primary_solid">
+        Buy Now !
+      </a>
+      <a href="http://localhost:3000/about.html" class="btn btn_white_ghost">
+        Learn More
+      </a>
     </div>
   </div>
 </div>
 
-</header>
+</div>
+<!-- Header Ends Here -->
 
+<!-- About section Starts Here -->
 <div class="index_about">
   <div class="u-container">
   <div class="row">
     <div class="col col-1-of-3">
       <h4 class="index_about_heading">Our Mission</h4>
-      <p>To create unique institution commited to the pursuit of selling best products, best advices to customer and a tradition of excellence in Watches, selling and service and providing most satisfying customer.</p>
+      <p>
+        To create unique institution commited to the pursuit of selling best products, best advices to customer and a tradition of excellence in Watches, selling and service and providing most satisfying customer.
+      </p>
     </div>
     <div class="col col-1-of-3">
       <h4 class="index_about_heading">What We Do</h4>
-      <p>We are selling watches of all different <span class="u-capital u-primary">16 Brands</span> from last <span class="u-capital u-primary">50 Years</span>, and we are the best seller in the city from last <span class="u-capital u-primary">30 Years</span>.</p>
+      <p>
+        We are selling watches of all different <span class="u-capital u-primary">16 Brands</span> from last <span class="u-capital u-primary">50 Years</span>, and we are the best seller in the city from last <span class="u-capital u-primary">30 Years</span>.
+      </p>
     </div>
     <div class="col col-1-of-3">
       <h4 class="index_about_heading">Why Choose Us</h4>
-      <p>We have got <span class="u-capital u-primary">16 Trust Certificates</span> from all brands. We also provide the <span class="u-capital u-primary">Nutural Advice</span> to the customer for buying and selling their valuable watches. We also provide <span class="u-capital u-primary">Online Store</span>, so you can buy anytime, anywhere!!</p>
+      <p>
+        We have got <span class="u-capital u-primary">16 Trust Certificates</span> from all brands. We also provide the <span class="u-capital u-primary">Nutural Advice</span> to the customer for buying and selling their valuable watches. We also provide <span class="u-capital u-primary">Online Store</span>, so you can buy anytime, anywhere!!
+      </p>
     </div>
   </div>
 </div>
 </div>
+<!-- About Section Ends Here -->
 
+<!-- Upcoming Watch Section Starts Here -->
 <div class="index_upcoming_watch">
   <div class="u-container">
   <div class="row">
     <div class="col col-5-of-12">
-      <img src="assets/img/upcoming-watch-preview.png" alt="Rolex Styler 1" class="index_upcoming_watch__img">
+      <img 
+        src="http://localhost:3000/assets/img/upcoming-watch-preview.png" 
+        alt="Rolex Styler 1" 
+        class="index_upcoming_watch__img">
     </div>
     <div class="col col-7-of-12">
       <div class="index_upcoming_watch__text">
@@ -137,8 +182,12 @@
           <p class="company_name u-capital u-bold">Rolex</p>
           <h2 class="modal_name">Styler 1</h2>
         </div>
-        <p class="launch_date"><span class="u-bold u-capital">Launch Date:</span> 25<sup>th</sup> January, 2018</p>
-        <p class="preview_text">Designer analog text! Looks stylish on every cloth and on every functions. Pre Order Now!!!</p>
+        <p class="launch_date">
+          <span class="u-bold u-capital">Launch Date:</span> 25<sup>th</sup> January, 2018
+        </p>
+        <p class="preview_text">
+          Designer analog text! Looks stylish on every cloth and on every functions. Pre Order Now!!!
+        </p>
         <a href="#" class="btn btn_white_ghost">Pre-Order Now!!</a>
       </div>
     </div>
@@ -147,11 +196,14 @@
 <div class="u-overlay"></div>
 
 </div>
+<!-- Upcoming Watch Section Ends Here -->
 
+<!-- Top Watches Section Starts Here -->
 <div class="index_top_watches">
   <div class="u-container">
   <h2 class="section_heading">Top Watches</h2>
   <div class="row">
+
     
       
     
@@ -171,38 +223,50 @@
   <path d="M0,216.94l250.56-82.59V0H0Z" style="fill: #f7f7f7"/>
 </svg>
 </div>
-              <img src="../../assets/img/watches/Lamex/Maxima/feature.png" alt="Timer">
+              <img src="http://localhost:3000/assets/img/watches/Lamex/Maxima/feature.png" alt="Timer">
               <div class="overlay">
                 <div class="button_wrapper">
-                  <a href="watches/Lamex/Maxima.html" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 132.99">
+                  <a href="http://localhost:3000/watches/Lamex/Maxima.html" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 132.99">
   <g>
     <ellipse cx="99.98" cy="66.5" rx="23.45" ry="20.25" style="fill: #f26b2f"/>
     <path d="M198.05,63.11a137.29,137.29,0,0,0-12.26-17.64,152,152,0,0,0-12.25-13.39,141.89,141.89,0,0,0-12.26-10.54q-3.06-2.31-6.13-4.35c-2-1.35-4.08-2.61-6.12-3.8A101,101,0,0,0,124.52,3.17,93.3,93.3,0,0,0,100,0C83.67.07,67.33,4.18,51,13.58A126.73,126.73,0,0,0,26.48,32.23,155.27,155.27,0,0,0,14.22,45.56,138.73,138.73,0,0,0,2,63.11L0,66.5l2,3.38A138,138,0,0,0,14.22,87.43a152.34,152.34,0,0,0,12.26,13.33A127.21,127.21,0,0,0,51,119.42c16.34,9.4,32.68,13.5,49,13.57a93.28,93.28,0,0,0,24.51-3.16A101.42,101.42,0,0,0,149,119.61c2-1.19,4.08-2.45,6.12-3.8s4.09-2.82,6.13-4.36a140,140,0,0,0,12.26-10.53,153.41,153.41,0,0,0,12.25-13.39,138.16,138.16,0,0,0,12.26-17.65L200,66.5ZM100,100.36c-21.66,0-39.22-15.16-39.22-33.86S78.34,32.64,100,32.64,139.22,47.8,139.22,66.5,121.66,100.36,100,100.36Z" style="fill: #f26b2f"/>
   </g>
 </svg>
-</a>
-                  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 182.36">
+
+                  </a>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 182.36">
   <path d="M183.06,99.49l.08.07-82.8,82.8L23.22,105.24A60.17,60.17,0,0,1,17.15,100a58.54,58.54,0,1,1,82.79-82.8v0l.21.2.4-.39A58.62,58.62,0,0,1,200,58.58,57.79,57.79,0,0,1,183.06,99.49Z" style="fill: #f26b2f"/>
 </svg>
-</a>
+
+                  </a>
                 </div>
               </div>
             </div>
             <div class="text_container">
               <div class="text">
                 <p class="name">
-                  <a href="watches/Lamex/Maxima.html" target="_blank">
-                    <span class="u-bold">Maxima</span> By Lamex
+                  <a href="http://localhost:3000/watches/Lamex/Maxima.html" target="_blank">
+                    <span class="u-bold">
+                      Maxima
+                    </span> 
+                    By Lamex
                   </a>
                 </p>
                 <p class="price">
-                  <a href="watches/Lamex/Maxima.html" class="u-bold u-primary" target="_blank">
-                    $ 85.99
+                  <a 
+                    href="http://localhost:3000/watches/Lamex/Maxima.html"
+                    class="u-bold u-primary" 
+                    target="_blank">
+                      $ 85.99
                   </a>
                 </p>
               </div>
               <div class="button_wrapper">
-                <a href="#"><span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 308.58 318.57">
+                <a href="#">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 308.58 318.57">
   <defs>
     <clipPath id="a" transform="translate(-4.96)">
       <rect y="0.01" width="318.66" height="318.66" style="fill: none"/>
@@ -212,16 +276,23 @@
     <path d="M248.77,259.12h22.81a8.69,8.69,0,0,0,6.07-2.51A8.59,8.59,0,0,0,271.58,242H112.25l11-31.4H268.81a13.18,13.18,0,0,0,12.39-9.68v-.14l32.16-128.3.18-1.32V69.88a11.43,11.43,0,0,0-10.67-11.19L122.41,44.74a8.59,8.59,0,0,0-9.2,7.93v0A8.6,8.6,0,0,0,121.08,62h.09L295,75.28,265.44,193.4H112.15L79.27,28.09,17,.73A8.6,8.6,0,0,0,5.68,5.13,8.58,8.58,0,0,0,10.1,16.46l54.07,23.7L96,200.29v.14a13.06,13.06,0,0,0,4.42,7.21,12.55,12.55,0,0,0,4.78,2.47L93,244.36a12.37,12.37,0,0,0-.72,3.85,10.79,10.79,0,0,0,3.53,8.1,11.29,11.29,0,0,0,7.63,2.81h15.91A31,31,0,0,0,100,287.78h0a30.85,30.85,0,1,0,42.42-28.66h83.29a31,31,0,0,0-19.36,28.66h0a30.85,30.85,0,1,0,42.46-28.66ZM117.13,287.78a13.69,13.69,0,1,1,4,9.72A13.7,13.7,0,0,1,117.13,287.78Zm106.39,0a13.69,13.69,0,1,1,4,9.72A13.7,13.7,0,0,1,223.52,287.78Z" transform="translate(-4.96)" style="fill: #f36b30;fill-rule: evenodd"/>
   </g>
 </svg>
-</span> Add To Cart</a>
-                <a href="#"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290.28 251.73">
+
+                  </span> 
+                  Add To Cart
+                </a>
+                <a href="#">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290.28 251.73">
   <path d="M144.7,251.73l-4-1.42-118-118A77.5,77.5,0,1,1,132.26,22.7l12.88,12.87L158,22.74a77.5,77.5,0,1,1,109.6,109.59L149.26,250.66ZM77.46,15a62.5,62.5,0,0,0-44.2,106.7L145.14,233.56,257,121.73a62.5,62.5,0,1,0-88.4-88.39L145.14,56.79,121.66,33.3A62.12,62.12,0,0,0,77.46,15Z" style="fill: #f26b31"/>
 </svg>
-</span> Add To Wishlist</a>
+
+                  </span> 
+                  Add To Wishlist
+                </a>
               </div>
             </div>
           </div>
         </div>
-      
     
       
     
@@ -233,38 +304,50 @@
   <path d="M0,216.94l250.56-82.59V0H0Z" style="fill: #f7f7f7"/>
 </svg>
 </div>
-              <img src="../../assets/img/watches/Rolex/Smoothie/feature.png" alt="Timer">
+              <img src="http://localhost:3000/assets/img/watches/Rolex/Smoothie/feature.png" alt="Timer">
               <div class="overlay">
                 <div class="button_wrapper">
-                  <a href="watches/Rolex/Smoothie.html" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 132.99">
+                  <a href="http://localhost:3000/watches/Rolex/Smoothie.html" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 132.99">
   <g>
     <ellipse cx="99.98" cy="66.5" rx="23.45" ry="20.25" style="fill: #f26b2f"/>
     <path d="M198.05,63.11a137.29,137.29,0,0,0-12.26-17.64,152,152,0,0,0-12.25-13.39,141.89,141.89,0,0,0-12.26-10.54q-3.06-2.31-6.13-4.35c-2-1.35-4.08-2.61-6.12-3.8A101,101,0,0,0,124.52,3.17,93.3,93.3,0,0,0,100,0C83.67.07,67.33,4.18,51,13.58A126.73,126.73,0,0,0,26.48,32.23,155.27,155.27,0,0,0,14.22,45.56,138.73,138.73,0,0,0,2,63.11L0,66.5l2,3.38A138,138,0,0,0,14.22,87.43a152.34,152.34,0,0,0,12.26,13.33A127.21,127.21,0,0,0,51,119.42c16.34,9.4,32.68,13.5,49,13.57a93.28,93.28,0,0,0,24.51-3.16A101.42,101.42,0,0,0,149,119.61c2-1.19,4.08-2.45,6.12-3.8s4.09-2.82,6.13-4.36a140,140,0,0,0,12.26-10.53,153.41,153.41,0,0,0,12.25-13.39,138.16,138.16,0,0,0,12.26-17.65L200,66.5ZM100,100.36c-21.66,0-39.22-15.16-39.22-33.86S78.34,32.64,100,32.64,139.22,47.8,139.22,66.5,121.66,100.36,100,100.36Z" style="fill: #f26b2f"/>
   </g>
 </svg>
-</a>
-                  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 182.36">
+
+                  </a>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 182.36">
   <path d="M183.06,99.49l.08.07-82.8,82.8L23.22,105.24A60.17,60.17,0,0,1,17.15,100a58.54,58.54,0,1,1,82.79-82.8v0l.21.2.4-.39A58.62,58.62,0,0,1,200,58.58,57.79,57.79,0,0,1,183.06,99.49Z" style="fill: #f26b2f"/>
 </svg>
-</a>
+
+                  </a>
                 </div>
               </div>
             </div>
             <div class="text_container">
               <div class="text">
                 <p class="name">
-                  <a href="watches/Rolex/Smoothie.html" target="_blank">
-                    <span class="u-bold">Smoothie</span> By Rolex
+                  <a href="http://localhost:3000/watches/Rolex/Smoothie.html" target="_blank">
+                    <span class="u-bold">
+                      Smoothie
+                    </span> 
+                    By Rolex
                   </a>
                 </p>
                 <p class="price">
-                  <a href="watches/Rolex/Smoothie.html" class="u-bold u-primary" target="_blank">
-                    $ 39.99
+                  <a 
+                    href="http://localhost:3000/watches/Rolex/Smoothie.html"
+                    class="u-bold u-primary" 
+                    target="_blank">
+                      $ 39.99
                   </a>
                 </p>
               </div>
               <div class="button_wrapper">
-                <a href="#"><span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 308.58 318.57">
+                <a href="#">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 308.58 318.57">
   <defs>
     <clipPath id="a" transform="translate(-4.96)">
       <rect y="0.01" width="318.66" height="318.66" style="fill: none"/>
@@ -274,16 +357,23 @@
     <path d="M248.77,259.12h22.81a8.69,8.69,0,0,0,6.07-2.51A8.59,8.59,0,0,0,271.58,242H112.25l11-31.4H268.81a13.18,13.18,0,0,0,12.39-9.68v-.14l32.16-128.3.18-1.32V69.88a11.43,11.43,0,0,0-10.67-11.19L122.41,44.74a8.59,8.59,0,0,0-9.2,7.93v0A8.6,8.6,0,0,0,121.08,62h.09L295,75.28,265.44,193.4H112.15L79.27,28.09,17,.73A8.6,8.6,0,0,0,5.68,5.13,8.58,8.58,0,0,0,10.1,16.46l54.07,23.7L96,200.29v.14a13.06,13.06,0,0,0,4.42,7.21,12.55,12.55,0,0,0,4.78,2.47L93,244.36a12.37,12.37,0,0,0-.72,3.85,10.79,10.79,0,0,0,3.53,8.1,11.29,11.29,0,0,0,7.63,2.81h15.91A31,31,0,0,0,100,287.78h0a30.85,30.85,0,1,0,42.42-28.66h83.29a31,31,0,0,0-19.36,28.66h0a30.85,30.85,0,1,0,42.46-28.66ZM117.13,287.78a13.69,13.69,0,1,1,4,9.72A13.7,13.7,0,0,1,117.13,287.78Zm106.39,0a13.69,13.69,0,1,1,4,9.72A13.7,13.7,0,0,1,223.52,287.78Z" transform="translate(-4.96)" style="fill: #f36b30;fill-rule: evenodd"/>
   </g>
 </svg>
-</span> Add To Cart</a>
-                <a href="#"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290.28 251.73">
+
+                  </span> 
+                  Add To Cart
+                </a>
+                <a href="#">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290.28 251.73">
   <path d="M144.7,251.73l-4-1.42-118-118A77.5,77.5,0,1,1,132.26,22.7l12.88,12.87L158,22.74a77.5,77.5,0,1,1,109.6,109.59L149.26,250.66ZM77.46,15a62.5,62.5,0,0,0-44.2,106.7L145.14,233.56,257,121.73a62.5,62.5,0,1,0-88.4-88.39L145.14,56.79,121.66,33.3A62.12,62.12,0,0,0,77.46,15Z" style="fill: #f26b31"/>
 </svg>
-</span> Add To Wishlist</a>
+
+                  </span> 
+                  Add To Wishlist
+                </a>
               </div>
             </div>
           </div>
         </div>
-      
     
       
         <div class="col col-1-of-3">
@@ -293,38 +383,50 @@
   <path d="M0,216.94l250.56-82.59V0H0Z" style="fill: #f7f7f7"/>
 </svg>
 </div>
-              <img src="../../assets/img/watches/Lamex/Timer/feature.png" alt="Timer">
+              <img src="http://localhost:3000/assets/img/watches/Lamex/Timer/feature.png" alt="Timer">
               <div class="overlay">
                 <div class="button_wrapper">
-                  <a href="watches/Lamex/Timer.html" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 132.99">
+                  <a href="http://localhost:3000/watches/Lamex/Timer.html" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 132.99">
   <g>
     <ellipse cx="99.98" cy="66.5" rx="23.45" ry="20.25" style="fill: #f26b2f"/>
     <path d="M198.05,63.11a137.29,137.29,0,0,0-12.26-17.64,152,152,0,0,0-12.25-13.39,141.89,141.89,0,0,0-12.26-10.54q-3.06-2.31-6.13-4.35c-2-1.35-4.08-2.61-6.12-3.8A101,101,0,0,0,124.52,3.17,93.3,93.3,0,0,0,100,0C83.67.07,67.33,4.18,51,13.58A126.73,126.73,0,0,0,26.48,32.23,155.27,155.27,0,0,0,14.22,45.56,138.73,138.73,0,0,0,2,63.11L0,66.5l2,3.38A138,138,0,0,0,14.22,87.43a152.34,152.34,0,0,0,12.26,13.33A127.21,127.21,0,0,0,51,119.42c16.34,9.4,32.68,13.5,49,13.57a93.28,93.28,0,0,0,24.51-3.16A101.42,101.42,0,0,0,149,119.61c2-1.19,4.08-2.45,6.12-3.8s4.09-2.82,6.13-4.36a140,140,0,0,0,12.26-10.53,153.41,153.41,0,0,0,12.25-13.39,138.16,138.16,0,0,0,12.26-17.65L200,66.5ZM100,100.36c-21.66,0-39.22-15.16-39.22-33.86S78.34,32.64,100,32.64,139.22,47.8,139.22,66.5,121.66,100.36,100,100.36Z" style="fill: #f26b2f"/>
   </g>
 </svg>
-</a>
-                  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 182.36">
+
+                  </a>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 182.36">
   <path d="M183.06,99.49l.08.07-82.8,82.8L23.22,105.24A60.17,60.17,0,0,1,17.15,100a58.54,58.54,0,1,1,82.79-82.8v0l.21.2.4-.39A58.62,58.62,0,0,1,200,58.58,57.79,57.79,0,0,1,183.06,99.49Z" style="fill: #f26b2f"/>
 </svg>
-</a>
+
+                  </a>
                 </div>
               </div>
             </div>
             <div class="text_container">
               <div class="text">
                 <p class="name">
-                  <a href="watches/Lamex/Timer.html" target="_blank">
-                    <span class="u-bold">Timer</span> By Lamex
+                  <a href="http://localhost:3000/watches/Lamex/Timer.html" target="_blank">
+                    <span class="u-bold">
+                      Timer
+                    </span> 
+                    By Lamex
                   </a>
                 </p>
                 <p class="price">
-                  <a href="watches/Lamex/Timer.html" class="u-bold u-primary" target="_blank">
-                    $ 24.99
+                  <a 
+                    href="http://localhost:3000/watches/Lamex/Timer.html"
+                    class="u-bold u-primary" 
+                    target="_blank">
+                      $ 24.99
                   </a>
                 </p>
               </div>
               <div class="button_wrapper">
-                <a href="#"><span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 308.58 318.57">
+                <a href="#">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 308.58 318.57">
   <defs>
     <clipPath id="a" transform="translate(-4.96)">
       <rect y="0.01" width="318.66" height="318.66" style="fill: none"/>
@@ -334,16 +436,23 @@
     <path d="M248.77,259.12h22.81a8.69,8.69,0,0,0,6.07-2.51A8.59,8.59,0,0,0,271.58,242H112.25l11-31.4H268.81a13.18,13.18,0,0,0,12.39-9.68v-.14l32.16-128.3.18-1.32V69.88a11.43,11.43,0,0,0-10.67-11.19L122.41,44.74a8.59,8.59,0,0,0-9.2,7.93v0A8.6,8.6,0,0,0,121.08,62h.09L295,75.28,265.44,193.4H112.15L79.27,28.09,17,.73A8.6,8.6,0,0,0,5.68,5.13,8.58,8.58,0,0,0,10.1,16.46l54.07,23.7L96,200.29v.14a13.06,13.06,0,0,0,4.42,7.21,12.55,12.55,0,0,0,4.78,2.47L93,244.36a12.37,12.37,0,0,0-.72,3.85,10.79,10.79,0,0,0,3.53,8.1,11.29,11.29,0,0,0,7.63,2.81h15.91A31,31,0,0,0,100,287.78h0a30.85,30.85,0,1,0,42.42-28.66h83.29a31,31,0,0,0-19.36,28.66h0a30.85,30.85,0,1,0,42.46-28.66ZM117.13,287.78a13.69,13.69,0,1,1,4,9.72A13.7,13.7,0,0,1,117.13,287.78Zm106.39,0a13.69,13.69,0,1,1,4,9.72A13.7,13.7,0,0,1,223.52,287.78Z" transform="translate(-4.96)" style="fill: #f36b30;fill-rule: evenodd"/>
   </g>
 </svg>
-</span> Add To Cart</a>
-                <a href="#"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290.28 251.73">
+
+                  </span> 
+                  Add To Cart
+                </a>
+                <a href="#">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290.28 251.73">
   <path d="M144.7,251.73l-4-1.42-118-118A77.5,77.5,0,1,1,132.26,22.7l12.88,12.87L158,22.74a77.5,77.5,0,1,1,109.6,109.59L149.26,250.66ZM77.46,15a62.5,62.5,0,0,0-44.2,106.7L145.14,233.56,257,121.73a62.5,62.5,0,1,0-88.4-88.39L145.14,56.79,121.66,33.3A62.12,62.12,0,0,0,77.46,15Z" style="fill: #f26b31"/>
 </svg>
-</span> Add To Wishlist</a>
+
+                  </span> 
+                  Add To Wishlist
+                </a>
               </div>
             </div>
           </div>
         </div>
-      
     
       
     
@@ -353,7 +462,9 @@
 </div>
 
 </div>
+<!-- Top Watches Section Ends Here -->
 
+<!-- Feature Section Starts Here -->
 <div class="feature_section">
   <div class="u-container col-8-of-12">
   <div class="flex-row">
@@ -370,8 +481,12 @@
 
         </div>
         <div class="feature_text">
-          <p class="u-bold u-capital">Free Home Delivery</p>
-          <p>To our every customers</p>
+          <p class="u-bold u-capital">
+            Free Home Delivery
+          </p>
+          <p>
+            To our every customers
+          </p>
         </div>
       </div>
     </div>
@@ -393,8 +508,12 @@
 
         </div>
         <div class="feature_text">
-          <p class="u-bold u-capital">24 Hour Call support</p>
-          <p>Ask questions any time</p>
+          <p class="u-bold u-capital">
+            24 Hour Call support
+          </p>
+          <p>
+            Ask questions any time
+          </p>
         </div>
       </div>
     </div>
@@ -412,8 +531,12 @@
 
         </div>
         <div class="feature_text">
-          <p class="u-bold u-capital">Money return</p>
-          <p>100% Return in 5 Days</p>
+          <p class="u-bold u-capital">
+            Money return
+          </p>
+          <p>
+            100% Return in 5 Days
+          </p>
         </div>
       </div>
     </div>
@@ -431,8 +554,12 @@
 
         </div>
         <div class="feature_text">
-          <p class="u-bold u-capital">Special discount</p>
-          <p>to every premium members</p>
+          <p class="u-bold u-capital">
+            Special discount
+          </p>
+          <p>
+            to every premium members
+          </p>
         </div>
       </div>
     </div>
@@ -440,27 +567,37 @@
 </div>
 
 </div>
+<!-- Feature Section Ends Here -->
 
+<!-- Blog Section Starts Here -->
 <div class="index_blog">
   <div class="u-container">
   <h2 class="section_heading">Blogs</h2>
   <div class="row">
-    
       <div class="col col-1-of-3">
         <div class="blog_container">
           <div class="blog_top">
             <div class="img_container">
               <!-- Add class long if the hight of image is higher than its width -->
-              <img src='../../../../../assets/img/blogs/Men Watches/2018-08-18-new-rolex-feature.jpg' alt="New Rolex Feature Image" class="--js-blog-card-image">
+              <img 
+                src='http://localhost:3000/assets/img/blogs/Men Watches/2018-08-18-new-rolex-feature.jpg' 
+                alt="New Rolex Feature Image"
+                class="--js-blog-card-image" >
               <div class="u-overlay"></div>
             </div>
             <div class="date_container">
-              <p class="date u-capital">18</p>
-              <p class="month u-capital">Aug 18</p>
+              <p class="date u-capital">
+                18
+              </p>
+              <p class="month u-capital">
+                Aug 18
+              </p>
             </div>
             <div class="blog_title_container">
               <h3 class="blog_title">
-                <a href="/blogs/men%20watches/2018/08/18/newRolex.html" target="_blank">New Rolex</a>
+                <a href="http://localhost:3000//blogs/men%20watches/2018/08/18/newRolex.html" target="_blank">
+                  New Rolex
+                </a>
               </h3>
               <p class="blog_author">
                 <span class="u-capital">By :</span> 
@@ -468,9 +605,16 @@
             </div>
           </div>
           <div class="blog_bottom">
-            <p class="blog_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex perferendis molestiae nemo enim, magni, dolor autem...</p>
+            <p class="blog_text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex perferendis molestiae nemo enim, magni, dolor autem...
+            </p>
             <div class="link_wrappers">
-              <a href="/blogs/men%20watches/2018/08/18/newRolex.html" class="u-primary u-bold" target="_blank">Read More</a>
+              <a 
+                href="http://localhost:3000//blogs/men%20watches/2018/08/18/newRolex.html" 
+                class="u-primary u-bold" 
+                target="_blank">
+                  Read More
+              </a>
               <a href="#" class="u-primary u-bold">Share</a>
             </div>
           </div>
@@ -482,16 +626,25 @@
           <div class="blog_top">
             <div class="img_container">
               <!-- Add class long if the hight of image is higher than its width -->
-              <img src='../../../../../assets/img/blogs/News/2018-05-22-renovated-store-feature.jpg' alt="Renovated Store Feature Image" class="--js-blog-card-image">
+              <img 
+                src='http://localhost:3000/assets/img/blogs/News/2018-05-22-renovated-store-feature.jpg' 
+                alt="Renovated Store Feature Image"
+                class="--js-blog-card-image" >
               <div class="u-overlay"></div>
             </div>
             <div class="date_container">
-              <p class="date u-capital">22</p>
-              <p class="month u-capital">May 18</p>
+              <p class="date u-capital">
+                22
+              </p>
+              <p class="month u-capital">
+                May 18
+              </p>
             </div>
             <div class="blog_title_container">
               <h3 class="blog_title">
-                <a href="/blogs/news/2018/05/22/renovatedStore.html" target="_blank">Renovated Store</a>
+                <a href="http://localhost:3000//blogs/news/2018/05/22/renovatedStore.html" target="_blank">
+                  Renovated Store
+                </a>
               </h3>
               <p class="blog_author">
                 <span class="u-capital">By :</span> 
@@ -499,9 +652,16 @@
             </div>
           </div>
           <div class="blog_bottom">
-            <p class="blog_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus optio perspiciatis tempore dolor totam, cum debitis....</p>
+            <p class="blog_text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus optio perspiciatis tempore dolor totam, cum debitis....
+            </p>
             <div class="link_wrappers">
-              <a href="/blogs/news/2018/05/22/renovatedStore.html" class="u-primary u-bold" target="_blank">Read More</a>
+              <a 
+                href="http://localhost:3000//blogs/news/2018/05/22/renovatedStore.html" 
+                class="u-primary u-bold" 
+                target="_blank">
+                  Read More
+              </a>
               <a href="#" class="u-primary u-bold">Share</a>
             </div>
           </div>
@@ -513,16 +673,25 @@
           <div class="blog_top">
             <div class="img_container">
               <!-- Add class long if the hight of image is higher than its width -->
-              <img src='../../../../../assets/img/blogs/News/2017-04-15-new-opening-feature.jpg' alt="New Opening Feature Image" class="--js-blog-card-image">
+              <img 
+                src='http://localhost:3000/assets/img/blogs/News/2017-04-15-new-opening-feature.jpg' 
+                alt="New Opening Feature Image"
+                class="--js-blog-card-image" >
               <div class="u-overlay"></div>
             </div>
             <div class="date_container">
-              <p class="date u-capital">15</p>
-              <p class="month u-capital">Apr 17</p>
+              <p class="date u-capital">
+                15
+              </p>
+              <p class="month u-capital">
+                Apr 17
+              </p>
             </div>
             <div class="blog_title_container">
               <h3 class="blog_title">
-                <a href="/blogs/news/2017/04/15/newOpening.html" target="_blank">New Opening</a>
+                <a href="http://localhost:3000//blogs/news/2017/04/15/newOpening.html" target="_blank">
+                  New Opening
+                </a>
               </h3>
               <p class="blog_author">
                 <span class="u-capital">By :</span> Kim Matthew
@@ -530,9 +699,16 @@
             </div>
           </div>
           <div class="blog_bottom">
-            <p class="blog_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam sed dolorem doloribus, porro ea ipsam odit...</p>
+            <p class="blog_text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam sed dolorem doloribus, porro ea ipsam odit...
+            </p>
             <div class="link_wrappers">
-              <a href="/blogs/news/2017/04/15/newOpening.html" class="u-primary u-bold" target="_blank">Read More</a>
+              <a 
+                href="http://localhost:3000//blogs/news/2017/04/15/newOpening.html" 
+                class="u-primary u-bold" 
+                target="_blank">
+                  Read More
+              </a>
               <a href="#" class="u-primary u-bold">Share</a>
             </div>
           </div>
@@ -543,92 +719,104 @@
 </div>
 
 </div>
+<!-- Blog Section Ends Here -->
 
+<!-- Instagram Section Starts Here -->
 <div class="index_instagram">
   <div class="u-container">
   <h2 class="section_heading">#Timeliners</h2>
   <div class="instagram_container">
     <div class="flex-row">
+        <div class="img_container">
+          <a href="#">
+            <img 
+              src="http://localhost:3000/assets/img/instagram/hv_2511-1.jpg" 
+              alt="hv_2511's Post" 
+              class="instagram_image --js-instagram-image" >
+          </a>
+        </div>
       
-        <!-- <div class="col-1-of-4"> -->
-          <div class="img_container">
-            <a href="#">
-              <img src="assets/img/instagram/hv_2511-1.jpg" alt="hv_2511's Post" class="instagram_image --js-instagram-image">
-            </a>
-          </div>
-        <!-- </div> -->
+        <div class="img_container">
+          <a href="#">
+            <img 
+              src="http://localhost:3000/assets/img/instagram/hv_2511-2.jpg" 
+              alt="hv_2511's Post" 
+              class="instagram_image --js-instagram-image" >
+          </a>
+        </div>
       
-        <!-- <div class="col-1-of-4"> -->
-          <div class="img_container">
-            <a href="#">
-              <img src="assets/img/instagram/hv_2511-2.jpg" alt="hv_2511's Post" class="instagram_image --js-instagram-image">
-            </a>
-          </div>
-        <!-- </div> -->
+        <div class="img_container">
+          <a href="#">
+            <img 
+              src="http://localhost:3000/assets/img/instagram/hv_2511-3.jpg" 
+              alt="hv_2511's Post" 
+              class="instagram_image --js-instagram-image" >
+          </a>
+        </div>
       
-        <!-- <div class="col-1-of-4"> -->
-          <div class="img_container">
-            <a href="#">
-              <img src="assets/img/instagram/hv_2511-3.jpg" alt="hv_2511's Post" class="instagram_image --js-instagram-image">
-            </a>
-          </div>
-        <!-- </div> -->
+        <div class="img_container">
+          <a href="#">
+            <img 
+              src="http://localhost:3000/assets/img/instagram/hv_2511-4.jpg" 
+              alt="hv_2511's Post" 
+              class="instagram_image --js-instagram-image" >
+          </a>
+        </div>
       
-        <!-- <div class="col-1-of-4"> -->
-          <div class="img_container">
-            <a href="#">
-              <img src="assets/img/instagram/hv_2511-4.jpg" alt="hv_2511's Post" class="instagram_image --js-instagram-image">
-            </a>
-          </div>
-        <!-- </div> -->
+        <div class="img_container">
+          <a href="#">
+            <img 
+              src="http://localhost:3000/assets/img/instagram/hv_2511-5.jpg" 
+              alt="hv_2511's Post" 
+              class="instagram_image --js-instagram-image" >
+          </a>
+        </div>
       
-        <!-- <div class="col-1-of-4"> -->
-          <div class="img_container">
-            <a href="#">
-              <img src="assets/img/instagram/hv_2511-5.jpg" alt="hv_2511's Post" class="instagram_image --js-instagram-image">
-            </a>
-          </div>
-        <!-- </div> -->
+        <div class="img_container">
+          <a href="#">
+            <img 
+              src="http://localhost:3000/assets/img/instagram/hv_2511-6.jpg" 
+              alt="hv_2511's Post" 
+              class="instagram_image --js-instagram-image" >
+          </a>
+        </div>
       
-        <!-- <div class="col-1-of-4"> -->
-          <div class="img_container">
-            <a href="#">
-              <img src="assets/img/instagram/hv_2511-6.jpg" alt="hv_2511's Post" class="instagram_image --js-instagram-image">
-            </a>
-          </div>
-        <!-- </div> -->
+        <div class="img_container">
+          <a href="#">
+            <img 
+              src="http://localhost:3000/assets/img/instagram/hv_2511-7.jpg" 
+              alt="hv_2511's Post" 
+              class="instagram_image --js-instagram-image" >
+          </a>
+        </div>
       
-        <!-- <div class="col-1-of-4"> -->
-          <div class="img_container">
-            <a href="#">
-              <img src="assets/img/instagram/hv_2511-7.jpg" alt="hv_2511's Post" class="instagram_image --js-instagram-image">
-            </a>
-          </div>
-        <!-- </div> -->
-      
-        <!-- <div class="col-1-of-4"> -->
-          <div class="img_container">
-            <a href="#">
-              <img src="assets/img/instagram/hv_2511-8.jpg" alt="hv_2511's Post" class="instagram_image --js-instagram-image">
-            </a>
-          </div>
-        <!-- </div> -->
+        <div class="img_container">
+          <a href="#">
+            <img 
+              src="http://localhost:3000/assets/img/instagram/hv_2511-8.jpg" 
+              alt="hv_2511's Post" 
+              class="instagram_image --js-instagram-image" >
+          </a>
+        </div>
       
     </div>
   </div>
 </div>
 
 </div>
+<!-- Instagram Section Ends Here -->
 
+    </main>
+    <!-- Main Ends Here -->
 
-  <!-- Footer Starts -->
-<footer>
-  <div class="u-container">
-    <div class="row">
-      <div class="col col-1-of-3">
-        <div class="logo">
-          <a href="index.html">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1109.08 285.19">
+    <!-- Footer Starts Here -->
+    <footer>
+      <div class="u-container">
+  <div class="row">
+    <div class="col col-1-of-3">
+      <div class="logo">
+        <a href="http://localhost:3000">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1109.08 285.19">
   <g>
     <path d="M154.54,214.27V191.91h35.89c-1-19.61-8.83-37.44-20.44-46.25l-4.64-3.52,4.64-3.53C181.6,129.8,189.4,112,190.41,92.37H154.54V70.92H205V84.44h-5.6v3.5c0,22-7.54,42.21-20,54.19,12.41,12,20,32.18,20,54.2v4.42H205v13.51Zm0-24.78V99.39H181.1c-.77,14.88-6.69,28.42-15.52,35.11a13,13,0,0,0-3.53,2.68c-4.17,6-4.4,27.75-4.4,28.71a16.43,16.43,0,0,1,9.44,4.52c11.32,10.34,14.61,11.56,15,19.07Z" style="fill: #f36b30"/>
     <polygon points="246.75 185.31 246.75 113.06 222.19 113.06 222.19 100.33 286.38 100.33 286.38 113.06 261.82 113.06 261.82 185.31 246.75 185.31" style="fill: #f36b30"/>
@@ -657,90 +845,137 @@
   </g>
 </svg>
 
+        </a>
+      </div>
+      <ul class="footer-nav">
+          <li class="footer-item">
+            <a href="http://localhost:3000/index.html" class="footer-link u-capital">
+              Home
+            </a>
+          </li>
+        
+          <li class="footer-item">
+            <a href="http://localhost:3000/about.html" class="footer-link u-capital">
+              About Us
+            </a>
+          </li>
+        
+          <li class="footer-item">
+            <a href="http://localhost:3000/blog-index.html" class="footer-link u-capital">
+              Blogs
+            </a>
+          </li>
+        
+          <li class="footer-item">
+            <a href="http://localhost:3000/locations.html" class="footer-link u-capital">
+              Locations
+            </a>
+          </li>
+        
+          <li class="footer-item">
+            <a href="http://localhost:3000/sign-in.html" class="footer-link u-capital">
+              Sign In
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+    <div class="col col-1-of-3">
+      <h3 class="special">Follow Us On Web</h3>
+      <ul class="footer-nav">
+          <li class="footer-item">
+            <a href="http://localhost:3000/https://www.facebook.com/" 
+              class="footer-link u-capital" 
+              target="_blank">
+                Facebook
+            </a>
+          </li>
+        
+          <li class="footer-item">
+            <a href="http://localhost:3000/https://www.instagram.com/" 
+              class="footer-link u-capital" 
+              target="_blank">
+                Instagram
+            </a>
+          </li>
+        
+          <li class="footer-item">
+            <a href="http://localhost:3000/https://www.twitter.com/" 
+              class="footer-link u-capital" 
+              target="_blank">
+                Twitter
+            </a>
+          </li>
+        
+          <li class="footer-item">
+            <a href="http://localhost:3000/https://plus.google.com/" 
+              class="footer-link u-capital" 
+              target="_blank">
+                Google Plus
+            </a>
+          </li>
+        
+          <li class="footer-item">
+            <a href="http://localhost:3000/https://www.linkedin.com/" 
+              class="footer-link u-capital" 
+              target="_blank">
+                Linked In
+            </a>
+          </li>
+        
+          <li class="footer-item">
+            <a href="http://localhost:3000/https://www.pinterest.com/" 
+              class="footer-link u-capital" 
+              target="_blank">
+                Pinterest
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+    <div class="col col-1-of-3">
+      <div class="address-content">
+        <p class="u-bold u-capital">
+          Address:
+        </p>
+        <address>
+          123, HotStream Avenue, <br>
+          Toronto, <br>
+          Manitoba, Canada. <br>
+          <span class="u-capital">r2c0n5</span>
+        </address>
+        <p class="u-bold u-capital">
+          Phone Number:
+        </p>
+        <p>
+          <a href="tel:+1234567890">+1234567890</a>
+        </p>
+        <p class="u-bold u-capital">E-mail:</p>
+        <p>
+          <a href="mailto:timeliners123@xyz.com">
+            timeliners123@xyz.com
           </a>
-        </div>
-        <ul class="footer-nav">
-          
-            <li class="footer-item">
-              <a href="index.html" class="footer-link u-capital">Home</a>
-            </li>
-          
-            <li class="footer-item">
-              <a href="about.html" class="footer-link u-capital">About Us</a>
-            </li>
-          
-            <li class="footer-item">
-              <a href="blog-index.html" class="footer-link u-capital">Blogs</a>
-            </li>
-          
-            <li class="footer-item">
-              <a href="locations.html" class="footer-link u-capital">Locations</a>
-            </li>
-          
-            <li class="footer-item">
-              <a href="watch-index.html" class="footer-link u-capital">Watches</a>
-            </li>
-          
-            <li class="footer-item">
-              <a href="sign-in.html" class="footer-link u-capital">Sign In</a>
-            </li>
-          
-        </ul>
-      </div>
-      <div class="col col-1-of-3">
-        <h3 class="special">Follow Us On Web</h3>
-        <ul class="footer-nav">
-          
-            <li class="footer-item">
-              <a href="https://www.facebook.com/" class="footer-link u-capital" target="_blank">Facebook</a>
-            </li>
-          
-            <li class="footer-item">
-              <a href="https://www.instagram.com/" class="footer-link u-capital" target="_blank">Instagram</a>
-            </li>
-          
-            <li class="footer-item">
-              <a href="https://www.twitter.com/" class="footer-link u-capital" target="_blank">Twitter</a>
-            </li>
-          
-            <li class="footer-item">
-              <a href="https://plus.google.com/" class="footer-link u-capital" target="_blank">Google Plus</a>
-            </li>
-          
-            <li class="footer-item">
-              <a href="https://www.linkedin.com/" class="footer-link u-capital" target="_blank">Linked In</a>
-            </li>
-          
-            <li class="footer-item">
-              <a href="https://www.pinterest.com/" class="footer-link u-capital" target="_blank">Pinterest</a>
-            </li>
-          
-        </ul>
-      </div>
-      <div class="col col-1-of-3">
-        <div class="address-content">
-          <p class="u-bold u-capital">Address: <a href="#"><span>LOGO</span></a></p>
-          <address>
-            123, HotStream Avenue, <br>
-            Toronto, <br>
-            Manitoba, Canada. <br>
-            <span class="u-capital">r2c0n5</span>
-          </address>
-          <p class="u-bold u-capital">Phone Number:</p>
-          <p><a href="tel:+1234567890">+1234567890</a></p>
-          <p class="u-bold u-capital">E-mail:</p>
-          <p><a href="mailto:abcd123@xyz.com">timeliners123@xyz.com</a></p>
-        </div>
+        </p>
       </div>
     </div>
   </div>
-  <p class="copyright">Copyright &copy; 2018. THE TIMELINERS. <a href="#">Terms</a> and <a href="#">Conditions</a>  are applied.</p>
-</footer>
-<!-- Footer Ends -->
+</div>
+<!-- Copyright Paragraph -->
+<p class="copyright">
+  Copyright &copy; 2018. THE TIMELINERS. 
+  <a href="#">Terms</a> 
+  and 
+  <a href="#">Conditions</a> 
+   are applied.
+</p>
 
 
-  <script src="assets/js/vendors.js"></script>
-  <script src="assets/js/app.js"></script>
+    </footer>
+    <!-- Footer Ends Here -->
 
-</body>
+    <!-- Requesting vendors.js and app.js -->
+    <script src="http://localhost:3000/assets/js/vendors.js"></script>
+    <script src="http://localhost:3000/assets/js/app.js"></script>
+  </body>
 </html>

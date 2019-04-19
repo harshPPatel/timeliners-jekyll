@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  {% include head.html %}
-</head>
-<body>
 
-  {% include navbar.html %}
+  <!-- Head Starts Here -->
+  <head>
+    {% include head.html %}
+  </head>
+  <!-- Head Ends Here -->
 
-  {{ content }}
+  <body>
+    <!-- Header Starts Here -->
+    <header>
+      {% include navbar.html %}
+    </header>
+    <!-- Header Ends Here -->
 
-  {% include footer.html %}
+    <!-- Main Starts Here -->
+    <main>
+      {{ content }}
+    </main>
+    <!-- Main Ends Here -->
 
-  <script src="assets/js/vendors.js"></script>
-  <script src="assets/js/app.js"></script>
+    <!-- Footer Starts Here -->
+    <footer>
+      {% include footer.html %}
+    </footer>
+    <!-- Footer Ends Here -->
 
-</body>
+    <!-- Requesting vendors.js and app.js -->
+    <script src="{{ site.baseurl }}/assets/js/vendors.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/app.js"></script>
+  </body>
 </html>

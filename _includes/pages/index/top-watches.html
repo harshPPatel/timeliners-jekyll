@@ -1,40 +1,68 @@
 <div class="u-container">
   <h2 class="section_heading">Top Watches</h2>
   <div class="row">
+
+    {%- comment -%}
+      Looping trough all site pages and checks if page is featured page, It will shows three of them here. 
+    {%- endcomment -%}
+
+    {% assign numberOfIteration = 0 %}
+
     {% for page in site.pages %}
-      {% if page.isFeature == true %}
+      {% if page.isFeature == true and numberOfIteration < 3 %}
         <div class="col col-1-of-3">
           <div class="top_watch_card">
             <div class="image_container">
               <div class="image_container_background">{% include icons/top-watch-bg.html %}</div>
-              <img src="{{ page.imageFolderPath }}/feature.png" alt="Timer">
+              <img src="{{ site.baseurl }}/{{ page.imageFolderPath }}/feature.png" alt="Timer">
               <div class="overlay">
                 <div class="button_wrapper">
-                  <a href="{{ page.permalink }}" target="_blank">{% include icons/preview.html %}</a>
-                  <a href="#">{% include icons/solid-heart.html %}</a>
+                  <a href="{{ site.baseurl }}/{{ page.permalink }}" target="_blank">
+                    {% include icons/preview.html %}
+                  </a>
+                  <a href="#">
+                    {% include icons/solid-heart.html %}
+                  </a>
                 </div>
               </div>
             </div>
             <div class="text_container">
               <div class="text">
                 <p class="name">
-                  <a href="{{ page.permalink }}" target="_blank">
-                    <span class="u-bold">{{ page.watchName }}</span> By {{ page.companyName }}
+                  <a href="{{ site.baseurl }}/{{ page.permalink }}" target="_blank">
+                    <span class="u-bold">
+                      {{ page.watchName }}
+                    </span> 
+                    By {{ page.companyName }}
                   </a>
                 </p>
                 <p class="price">
-                  <a href="{{ page.permalink }}" class="u-bold u-primary" target="_blank">
-                    $ {{ page.price }}
+                  <a 
+                    href="{{ site.baseurl }}/{{ page.permalink }}"
+                    class="u-bold u-primary" 
+                    target="_blank">
+                      $ {{ page.price }}
                   </a>
                 </p>
               </div>
               <div class="button_wrapper">
-                <a href="#"><span>{% include icons/cart.html %}</span> Add To Cart</a>
-                <a href="#"><span>{% include icons/comment-heart.html %}</span> Add To Wishlist</a>
+                <a href="#">
+                  <span>
+                    {% include icons/cart.html %}
+                  </span> 
+                  Add To Cart
+                </a>
+                <a href="#">
+                  <span>
+                    {% include icons/comment-heart.html %}
+                  </span> 
+                  Add To Wishlist
+                </a>
               </div>
             </div>
           </div>
         </div>
+        {%- assign numberOfIteration = numberOfIteration | plus:1 -%}
       {% endif %}
     {% endfor %}
   </div>

@@ -8,7 +8,5 @@ navigation:
     url: blog-index.html
   - pageName: "Locations"
     url: locations.html
-  - pageName: "Watches"
-    url: watch-index.html
   - pageName: "Sign In"
     url: sign-in.html

@@ -2,14 +2,20 @@
   <h2 class="section_heading">#Timeliners</h2>
   <div class="instagram_container">
     <div class="flex-row">
+
+      {%- comment -%}
+        Looping through all instagram lists inside sites data's instagram file.
+      {%- endcomment -%}
+
       {% for image in site.data.instagram.instgramImages %}
-        <!-- <div class="col-1-of-4"> -->
-          <div class="img_container">
-            <a href="#">
-              <img src="assets/img/instagram/{{ image.imageName }}.jpg" alt="{{ image.username }}'s Post" class="instagram_image --js-instagram-image">
-            </a>
-          </div>
-        <!-- </div> -->
+        <div class="img_container">
+          <a href="#">
+            <img 
+              src="{{ site.baseurl }}/assets/img/instagram/{{ image.imageName }}.jpg" 
+              alt="{{ image.username }}'s Post" 
+              class="instagram_image --js-instagram-image" >
+          </a>
+        </div>
       {% endfor %}
     </div>
   </div>

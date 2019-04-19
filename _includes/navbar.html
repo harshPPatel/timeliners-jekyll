@@ -1,18 +1,24 @@
-<!-- Navbar Starts -->
+<!-- Navbar Starts Here -->
 <nav>
   <div class="u-container">
     <div class="logo">
-      <a href="{{ site.data.navigation.navigation[0].url }}">
+      <a href="{{ site.baseurl }}">
         {% include logo/logo.html %}
       </a>
     </div>
     <ul class="navigation">
+      {%- comment -%} 
+        Looping through all navigation options inside navigation file in data. 
+      {%- endcomment -%}
+      
       {% for item in site.data.navigation.navigation %}
         <li class="nav-item {% if item.url == page.permalink %} active {% endif %}">
-          <a href="{{ item.url }}" class="nav-link">{{ item.pageName }}</a>
+          <a href="{{ site.baseurl }}/{{ item.url }}" class="nav-link">
+            {{ item.pageName }}
+          </a>
         </li>
       {% endfor %}
     </ul>
   </div>
 </nav>
-<!-- Navbar Ends -->
+<!-- Navbar Ends Here -->
