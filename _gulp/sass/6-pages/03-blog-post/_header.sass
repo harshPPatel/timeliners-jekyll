@@ -35,6 +35,7 @@
       border-radius: 2px
       opacity: 0.5
       transition: all 0.2s ease
+      cursor: default
       &:hover
         opacity: 0.8
         transform: scale(1.1)
@@ -50,3 +51,32 @@
           text-decoration: underline
         &.post_link
           color: $primary-color
+
+.pagination 
+  width: 200px
+  margin: 0 auto
+  display: flex
+  align-items: center
+  justify-content: center
+  .pagination_link
+    font-size: 1.5rem
+    display: block
+    width: 40px
+    height: 40px
+    line-height: 34px
+    border-radius: 3px
+    border: 3px solid $primary-color
+    text-align: center
+    font-weight: bold
+    text-decoration: none
+    color: $primary-color
+    margin-right: 20px
+    cursor: default
+    &.active
+      background-color: $primary-color
+      color: $white-color
+    &.disabled
+      border-color: rgba($heading-color, 0.4)
+      color: rgba($heading-color, 0.4)
+  a.pagination_link
+    cursor: pointer

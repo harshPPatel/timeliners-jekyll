@@ -5,7 +5,7 @@ navigation:
   - pageName: "About Us"
     url: about.html
   - pageName: "Blogs"
-    url: blog-index.html
+    url: blogs/index.html
   - pageName: "Locations"
     url: locations.html
   - pageName: "Sign In"
