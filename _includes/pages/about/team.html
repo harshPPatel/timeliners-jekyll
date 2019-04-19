@@ -5,7 +5,10 @@
         <div class="flex-row">
           <div class="flex-col col-1-of-2">
             <div class="team_img_container">
-              <img src="assets/img/team/team-0.png" alt="Clay Burt" id="--js-team-image">
+              <img 
+                src="{{ site.baseurl }}/assets/img/team/team-0.png" 
+                alt="Clay Burt" 
+                id="--js-team-image">
             </div>
           </div>
           <div class="flex-col col-1-of-2">
@@ -28,17 +31,29 @@
               <p class="web">
                 <span class="u-bold u-capital">On Web :</span>
                 <span class="links_container">
-                  <a class="team_web_links --js-team-web-links" href="https://www.facebook.com" target="_blank">
-                    {% include icons/facebook.html %}
+                  <a 
+                    class="team_web_links --js-team-web-links" 
+                    href="https://www.facebook.com" 
+                    target="_blank">
+                      {% include icons/facebook.html %}
                   </a>
-                  <a class="team_web_links --js-team-web-links" href="https://www.twitter.com" target="_blank">
-                    {% include icons/twitter.html %}
+                  <a 
+                    class="team_web_links --js-team-web-links" 
+                    href="https://www.twitter.com" 
+                    target="_blank">
+                      {% include icons/twitter.html %}
                   </a>
-                  <a class="team_web_links --js-team-web-links" href="https://www.youtube.com" target="_blank">
-                    {% include icons/youtube.html %}
+                  <a 
+                    class="team_web_links --js-team-web-links" 
+                    href="https://www.youtube.com" 
+                    target="_blank">
+                      {% include icons/youtube.html %}
                   </a>
-                  <a class="team_web_links --js-team-web-links" href="https://www.linkedin.com" target="_blank">
-                    {% include icons/linked-in.html %}
+                  <a 
+                    class="team_web_links --js-team-web-links" 
+                    href="https://www.linkedin.com" 
+                    target="_blank">
+                      {% include icons/linked-in.html %}
                   </a>
               </p>
             </div>
@@ -47,10 +62,18 @@
     </div>
     <div class="team_list_buttons_container" id="--js-team-buttons-container">
       <ul>
+
+        {%- comment -%}
+          Looping through teamMembers file in Site's data to create bullets for team carousal.
+        {%- endcomment -%}
+
         {% for member in site.data.teamMembers.teamMembers %}
           <li>
-            <a href="#" class="team_list_buttons --js-team-buttons {% if forloop.index0 == 0 %} active {% endif %}" data-imageNumber="1">
-              <img src="assets/img/team/team-{{ forloop.index0 }}.png" alt="{{ member }}">
+            <a 
+              href="#" 
+              class="team_list_buttons --js-team-buttons {% if forloop.index0 == 0 %} active {% endif %}" 
+              data-imageNumber="1">
+                <img src="{{ site.baseurl }}/assets/img/team/team-{{ forloop.index0 }}.png" alt="{{ member }}">
             </a>
           </li>
         {% endfor %}

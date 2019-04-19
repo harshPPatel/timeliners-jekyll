@@ -21,6 +21,11 @@ function addLongClassToImages() {
   }
 }
 
+// Change it and try to make one function to  prevent all buttons
+document.getElementById('about_newsletter_form').addEventListener('click', function(e) {
+  e.preventDefault();
+});
+
 window.onload = function() {
   addLongClassToImages();
   if (document.getElementById('watch_header_image_carousal') !== null) {

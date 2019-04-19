@@ -12,6 +12,11 @@
                 </tr>
             </thead>
             <tbody>
+
+                {%- comment -%}
+                    Looping from schedule file in site data folder.
+                {%- endcomment -%}
+
                 {% for day in site.data.schedule.schedule %}
                     <tr>
                         <td class="u-bold">{{ day.day }}</td>

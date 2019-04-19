@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    {% include head.html %}
-</head>
-<body>
+    <!-- Head Starts Here -->
+    <head>
+        {% include head.html %}
+    </head>
+    <!-- Head Ends Here -->
+    <body>
+        <!-- Header Starts Here -->
+        <header>
+            {% include navbar.html %}
+        </header>
+        <!-- Header Ends Here -->
 
-{% include navbar.html %}
+        <!-- Main Starts Here -->
+        <main>
+            {{ content }}
+        </main>
+        <!-- Main Ends Here -->
 
-{{ content }}
-
-<script src="assets/js/vendors.js"></script>
-<script src="assets/js/app.js"></script>
-
-</body>
+        <!-- Adding JavaScripts -->
+        <script src="assets/js/vendors.js"></script>
+        <script src="assets/js/app.js"></script>
+    </body>
 </html>
