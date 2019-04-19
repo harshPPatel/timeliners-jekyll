@@ -13,7 +13,7 @@
           {% if comment.blogTitle == page.title %}
             {% for comment in comment.comments %}
               <div class="comment_box {% if comment.isSubComment %} subComment {% endif %}">
-                <img src='../../../../../assets/img/blogs/{{ page.categories }}/comments/{{ comment.name }}.jpg' alt="{{ comment.name }}">
+                <img src='{{ site.baseurl }}/assets/img/blogs/{{ page.categories }}/comments/{{ comment.name }}.jpg' alt="{{ comment.name }}">
                 <div class="comment">
                   <p class="comment_text">{{ comment.comment }}</p>
                   <div class="comment_buttons_wrapper">

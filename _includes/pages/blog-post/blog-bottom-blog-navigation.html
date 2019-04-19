@@ -3,7 +3,7 @@
     {% if page.previous.url %}
       <a href="{{ page.previous.url }}" target="_blank">
         <span class="img_container">
-          <img src='../../../../../assets/img/blogs/{{ page.previous.categories }}/{{ page.previous.date | date: "%Y-%m-%d" }}-{{ page.previous.imageName }}-feature.jpg' alt="{{ page.previous.title }}">
+          <img src='{{ site.baseurl }}/assets/img/blogs/{{ page.previous.categories }}/{{ page.previous.date | date: "%Y-%m-%d" }}-{{ page.previous.imageName }}-feature.jpg' alt="{{ page.previous.title }}">
         </span>
         <div class="content">
           <p class="title u-bold">{{ page.previous.title }}</p>
@@ -18,7 +18,7 @@
     {% if page.next.url %}
       <a href="{{ page.next.url }}" target="_blank">
         <span class="img_container">
-          <img src='../../../../../assets/img/blogs/{{ page.next.categories }}/{{ page.next.date | date: "%Y-%m-%d" }}-{{ page.next.imageName }}-feature.jpg' alt="{{ page.next.title }}">
+          <img src='{{ site.baseurl }}/assets/img/blogs/{{ page.next.categories }}/{{ page.next.date | date: "%Y-%m-%d" }}-{{ page.next.imageName }}-feature.jpg' alt="{{ page.next.title }}">
         </span>
         <span class="content">
           <p class="title u-bold">{{ page.next.title }}</p>

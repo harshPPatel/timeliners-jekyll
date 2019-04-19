@@ -18,7 +18,7 @@
 
   <div class="company_dashboard_container">
     <div class="logo_container">
-      <a href="../../../../../about.html" target="_blank">
+      <a href="{{ site.baseurl }}/about.html" target="_blank">
         {% include logo/logo-secondary.html %}
       </a>
     </div>
@@ -57,15 +57,15 @@
             <div class="col col-1-of-4">
               <div class="img_container">
                 <img
-                src='../../../../../assets/img/blogs/{{ post.categories }}/{{ post.date | date: "%Y-%m-%d" }}-{{ post.imageName }}-feature.jpg'
-                alt="{{ post.title }} feature"
-                class="popular_post_blog_img" >
+                  src='{{ site.baseurl }}/assets/img/blogs/{{ post.categories }}/{{ post.date | date: "%Y-%m-%d" }}-{{ post.imageName }}-feature.jpg'
+                  alt="{{ post.title }} feature"
+                  class="popular_post_blog_img" >
               </div>
             </div>
             <div class="col col-3-of-4">
               <div class="content">
                 <p class="popular_blog_title u-bold">
-                  <a href="{{ post.url }}" target="_blank"> {{ post.title }}  </a>
+                  <a href="{{ site.baseurl }}/{{ post.url }}" target="_blank"> {{ post.title }}  </a>
                 </p>
                 <p class="popular_blog_date"> {{ post.date | date_to_string }} </p>
               </div>
@@ -85,8 +85,11 @@
   <div class="offer_container">
     {% for page in site.pages %}
       {% if page.isOffer %}
-        <a href="../../../../../{{ page.permalink }}" target="_blank">
-          <img src="../../../{{ page.imageFolderPath }}/feature.png" alt="{{ page.watchName }}" class="offer_img">
+        <a href="{{ site.baseurl }}/{{ page.permalink }}" target="_blank">
+          <img 
+            src="{{ site.baseurl }}/{{ page.imageFolderPath }}/feature.png" 
+            alt="{{ page.watchName }}" 
+            class="offer_img">
           <span class="u-overlay"></span>
           <div class="content">
             <p class="u-bold u-primary offer_title"> {{ page.offerDiscount }} Discount</p>
@@ -107,7 +110,7 @@
       {% for category in site.categories %}
         <li class="archive_row">
           <p class="title">
-            <a href="../../../../../blogs/{{ category[0] }}.html" target="_blank"> {{ category[0] }} </a>
+            <a href="{{ site.baseurl }}/blogs/{{ category[0] }}.html" target="_blank"> {{ category[0] }} </a>
           </p>
           <p class="count u-primary u-bold">{{ category[1].size }}</p>
         </li>
@@ -129,7 +132,12 @@
     <h3 class="blog_sidebar_heading">News Letter</h3>
     <!-- Prevent default event in js -->
     <form class="newsletter_form">
-      <input type="email" name="email" required placeholder="Your Email" class="newsletter_form_input">
+      <input 
+        type="email" 
+        name="email" 
+        placeholder="Your Email" 
+        class="newsletter_form_input"
+        required> 
       <button class="newsletter_form_submit" type="submit">
         {% include icons/mail.html %}
       </button>

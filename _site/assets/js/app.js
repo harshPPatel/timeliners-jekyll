@@ -1,6 +1,8 @@
 var blogCardImage = document.getElementsByClassName('--js-blog-card-image');
 var instagramImage = document.getElementsByClassName('--js-instagram-image');
 
+// Add if check as i added in newsform button event handler
+
 // Adds Long Class to images in the page
 function addLongClassToImages() {
   // for blog card images
@@ -22,9 +24,12 @@ function addLongClassToImages() {
 }
 
 // Change it and try to make one function to  prevent all buttons
-document.getElementById('about_newsletter_form').addEventListener('click', function(e) {
-  e.preventDefault();
-});
+const newsletterSubmitButton = document.getElementById('about_newsletter_form'); 
+if (newsletterSubmitButton) {
+  newsletterSubmitButton.addEventListener('click', function(e) {
+    e.preventDefault();
+  });
+}
 
 window.onload = function() {
   addLongClassToImages();

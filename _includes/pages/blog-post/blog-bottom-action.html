@@ -7,7 +7,7 @@
       <p>
         {% for comment in site.data.blogs.comments.comments %}
         {% if comment.blogTitle == page.title %}
-        {{ comment.likes }} Likes
+          {{ comment.likes }} Likes
         {% endif %}
         {% endfor %}
       </p>

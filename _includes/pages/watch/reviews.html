@@ -9,7 +9,7 @@
               {% for review in review.reviews %}
                 <div>
                   <div class="slide">
-                    <img src="{{ page.imageFolderPath }}/testimonial-{{ forloop.index }}.jpg" alt="name">
+                    <img src="{{ site.baseurl }}/{{ page.imageFolderPath }}/testimonial-{{ forloop.index }}.jpg" alt="name">
                     <div class="review_container">
                       <p class="review">{{ review.review }}</p>
                       <p class="name u-bold u-primary">- {{ review.name }}</p>

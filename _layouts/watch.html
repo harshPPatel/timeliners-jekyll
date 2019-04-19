@@ -1,13 +1,23 @@
 ---
-layout: watchDefault
+layout: default
 ---
 
-{% include pages/watch/header.html %}
+<!-- Header Section Starts Here -->
+<div class="watch_header">
+  {% include pages/watch/header.html %}
+</div>
+<!-- Header Section Ends Here -->
 
   {{ content }}
 
+<!-- Reveiws Section Starts Here -->
 {% include pages/watch/reviews.html %}
+<!-- Reveiws Section Ends Here -->
 
+<!-- Comments Section Starts Here -->
 {% include pages/watch/comments.html %}
+<!-- Comments Section Ends Here -->
 
+<!-- Reply Section Starts Here -->
 {% include pages/watch/reply-form.html %}
+<!-- Reply Section Ends Here -->

@@ -16,19 +16,31 @@
             {% if review.watchName == page.watchName %}
               {% for comment in review.comments %}
               <div class="comment_box {% if comment.isSubComment %} subComment {% endif %}">
-                <img src="{{ page.imageFolderPath }}/comments/{{ comment.name }}.jpg" alt="{{ comment.name }}">
+                <img src="{{ site.baseurl }}/{{ page.imageFolderPath }}/comments/{{ comment.name }}.jpg" alt="{{ comment.name }}">
                 <div class="comment">
                   <p class="comment_text">{{ comment.comment }}</p>
                   <div class="comment_buttons_wrapper">
                     <div class="comment_action_buttons">
-                      <a href="#" class="comment_link">{% include icons/comment-reply.html %} Reply</a>
-                      <a href="#" class="comment_link">{% include icons/comment-heart.html %} Like</a>
+                      <a href="#" class="comment_link">
+                        {% include icons/comment-reply.html %} Reply
+                      </a>
+                      <a href="#" class="comment_link">
+                        {% include icons/comment-heart.html %} Like
+                      </a>
                     </div>
                     <div class="social_links">
-                      <a href="#" class="comment_link_social">{% include icons/facebook.html %}</a>
-                      <a href="#" class="comment_link_social">{% include icons/youtube.html %}</a>
-                      <a href="#" class="comment_link_social">{% include icons/twitter.html %}</a>
-                      <a href="#" class="comment_link_social">{% include icons/linked-in.html %}</a>
+                      <a href="#" class="comment_link_social">
+                        {% include icons/facebook.html %}
+                      </a>
+                      <a href="#" class="comment_link_social">
+                        {% include icons/youtube.html %}
+                      </a>
+                      <a href="#" class="comment_link_social">
+                        {% include icons/twitter.html %}
+                      </a>
+                      <a href="#" class="comment_link_social">
+                        {% include icons/linked-in.html %}
+                      </a>
                     </div>
                   </div>
                 </div>
