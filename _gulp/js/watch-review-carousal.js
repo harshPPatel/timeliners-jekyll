@@ -1,3 +1,5 @@
+// Watch reviews carousal
+
 new Glider(document.querySelector('.watch_reviews #review_carousal .glider'), {
   slidesToShow: 1,
   dots: '.dots',

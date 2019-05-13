@@ -1,26 +1,31 @@
-var { parallel,
-      src,
-      dest,
-      task,
-      watch }     = require('gulp'),
-    autoprefixer  = require('gulp-autoprefixer'),
-    cleanCSS      = require('gulp-clean-css'),
-    sass          = require('gulp-sass'),
-    plumber       = require('gulp-plumber'),
-    concat        = require('gulp-concat'),
-    pump          = require('pump'),
-    browserSync   = require('browser-sync');
+var {
+  parallel,
+  src,
+  dest,
+  task,
+  watch
+} = require('gulp'),
+  autoprefixer = require('gulp-autoprefixer'),
+  cleanCSS = require('gulp-clean-css'),
+  sass = require('gulp-sass'),
+  plumber = require('gulp-plumber'),
+  concat = require('gulp-concat'),
+  pump = require('pump'),
+  browserSync = require('browser-sync');
 
-var sassSource    = 'sass/**/*.sass',
-    appJSSource   = 'js/*.js',
-    vendorJSSource= 'js/vendors/*.js',
-    jsonSource    = 'json/*.json';
+// Source Paths for tasks
+var sassSource = 'sass/**/*.sass',
+  appJSSource = 'js/*.js',
+  vendorJSSource = 'js/vendors/*.js',
+  jsonSource = 'json/*.json';
 
-var cssDestination  = '../assets/css/',
-    jsDestination   = '../assets/js/',
-    jsonDestination = '../assets/json/';
+// Destination Paths for tasks
+var cssDestination = '../assets/css/',
+  jsDestination = '../assets/js/',
+  jsonDestination = '../assets/json/';
 
-task('sass', function(cb) {
+// SASS Task
+task('sass', function (cb) {
   return src(sassSource)
     .pipe(sass({
       outputStyle: 'compressed'
@@ -37,48 +42,52 @@ task('sass', function(cb) {
   cb();
 })
 
-task('appJS', function(cb) {
+// JavaScript Task
+task('appJS', function (cb) {
   pump([
       src(appJSSource),
       plumber(),
       concat('app.js'),
       dest(jsDestination)
     ],
-  cb
+    cb
   );
 })
 
-task('vendorJS', function(cb) {
+// Vendor JavaScript Task
+task('vendorJS', function (cb) {
   pump([
       src(vendorJSSource),
       plumber(),
       concat('vendors.js'),
       dest(jsDestination)
     ],
-  cb
+    cb
   );
 })
 
-task('json', function(cb) {
+// JSON Task
+task('json', function (cb) {
   return src(jsonSource)
-      .pipe(plumber())
-      .pipe(dest(jsonDestination))
-    cb();  
+    .pipe(plumber())
+    .pipe(dest(jsonDestination))
+  cb();
 })
 
-task('watch', function(cb) {
+// Watch Task
+task('watch', function (cb) {
   browserSync.init({
-    server: {
-      baseDir: '../_site'
+      server: {
+        baseDir: '../_site'
+      },
+      notify: true
     },
-    notify: true
-  },
-  function(err, bs) {
-      bs.addMiddleware("*", function(req, res) {
-          res.writeHead(302, {
-              location: "404.html"
-          });
-          res.end("Redirecting!");
+    function (err, bs) {
+      bs.addMiddleware("*", function (req, res) {
+        res.writeHead(302, {
+          location: "404.html"
+        });
+        res.end("Redirecting!");
       });
     }
   );
@@ -96,4 +105,10 @@ task('watch', function(cb) {
   cb();
 })
 
-exports.default = parallel ( task('sass'), task('appJS'), task('vendorJS'), task('json'), task('watch'));
+// Default Task
+exports.default = parallel(
+  task('sass'),
+  task('appJS'),
+  task('vendorJS'),
+  task('json'),
+  task('watch'));

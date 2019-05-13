@@ -76,7 +76,7 @@ class Team {
     });
   }
 
-   /**
+  /**
    * Adds Active class to cliked button
    *
    * Parameter(s):
@@ -109,7 +109,7 @@ class Team {
     nameElement.innerHTML = data[0].teamMembers[index].name;
     postElement.innerHTML = data[0].teamMembers[index].post;
     kickerElement.innerHTML = data[0].teamMembers[index].kicker;
-    socialLinkElements.forEach(function(link, index2) {
+    socialLinkElements.forEach(function (link, index2) {
       link.href = data[0].teamMembers[index].socialLinks[index2];
     });
   }
@@ -124,7 +124,7 @@ class Team {
   static addButtonEvents(data) {
     var buttons = document.querySelectorAll('.--js-team-buttons');
     for (let index = 0; index < buttons.length; index++) {
-      buttons[index].onclick = function(event) {
+      buttons[index].onclick = function (event) {
         event.preventDefault();
         Team.removeActiveClass();
         Team.addActiveClass(this);
@@ -147,7 +147,7 @@ class Team {
     element.innerHTML = email;
     element.href = "mailto: " + email;
   }
-  
+
   /**
    * Formates the phone number and change the number of member as well as link's href
    * 
@@ -161,8 +161,8 @@ class Team {
     const countryCode = data[0].teamMembers[index].countryCode;
     const element = document.querySelector('#--js-phone-id a');
     var tempPhone = new String(phone.toString(0));
-    
-    var formattedPhone = countryCode + " (" + tempPhone.substring(0, 3) + ") " + tempPhone.substring(3,6) + " " + tempPhone.substring(6,10);
+
+    var formattedPhone = countryCode + " (" + tempPhone.substring(0, 3) + ") " + tempPhone.substring(3, 6) + " " + tempPhone.substring(6, 10);
     element.innerHTML = formattedPhone;
     element.href = "tel: " + countryCode + phone;
   }

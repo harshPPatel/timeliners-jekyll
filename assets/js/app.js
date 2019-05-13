@@ -1,45 +1,51 @@
+// Variables
 var blogCardImage = document.getElementsByClassName('--js-blog-card-image');
 var instagramImage = document.getElementsByClassName('--js-instagram-image');
+var newsletterSubmitButton = document.getElementById('about_newsletter_form');
 
 // Add if check as i added in newsform button event handler
 
 // Adds Long Class to images in the page
 function addLongClassToImages() {
+
   // for blog card images
   for (var i = 0; i < blogCardImage.length; i++) {
     var height = blogCardImage[i].naturalHeight;
-    var width  = blogCardImage[i].naturalWidth;
+    var width = blogCardImage[i].naturalWidth;
     if (height > width) {
       blogCardImage[i].classList.add('long');
     }
   }
+
   // for instagram images
   for (var i = 0; i < instagramImage.length; i++) {
     var height = instagramImage[i].naturalHeight;
-    var width  = instagramImage[i].naturalWidth;
+    var width = instagramImage[i].naturalWidth;
     if (height > width) {
       instagramImage[i].classList.add('long');
     }
   }
 }
 
-// Change it and try to make one function to  prevent all buttons
-const newsletterSubmitButton = document.getElementById('about_newsletter_form'); 
+// Preventing default submit trigger of newsletter form in about page
 if (newsletterSubmitButton) {
-  newsletterSubmitButton.addEventListener('click', function(e) {
+  newsletterSubmitButton.addEventListener('click', function (e) {
     e.preventDefault();
   });
 }
+// functions to run on window load
+window.onload = function () {
 
-window.onload = function() {
+  // Adding long class
   addLongClassToImages();
+
+  // Setting time out to prevent errors
   if (document.getElementById('watch_header_image_carousal') !== null) {
-    setTimeout(productCarousal, 3000); // Setting Timeout to avoid errors
+    setTimeout(productCarousal, 3000);
   }
 }
 // Function to initialize product carousal in watch page
-
-var productCarousal = $(function() {
+var productCarousal = $(function () {
   $("#watch_header_image_carousal").exzoom({
     "navWidth": 45,
     "navHeight": 45,
@@ -47,7 +53,6 @@ var productCarousal = $(function() {
     "autoPlay": false
   });
 });
-
 class Team {
   /**
    * Constructor of class Team, inializes the url
@@ -126,7 +131,7 @@ class Team {
     });
   }
 
-   /**
+  /**
    * Adds Active class to cliked button
    *
    * Parameter(s):
@@ -159,7 +164,7 @@ class Team {
     nameElement.innerHTML = data[0].teamMembers[index].name;
     postElement.innerHTML = data[0].teamMembers[index].post;
     kickerElement.innerHTML = data[0].teamMembers[index].kicker;
-    socialLinkElements.forEach(function(link, index2) {
+    socialLinkElements.forEach(function (link, index2) {
       link.href = data[0].teamMembers[index].socialLinks[index2];
     });
   }
@@ -174,7 +179,7 @@ class Team {
   static addButtonEvents(data) {
     var buttons = document.querySelectorAll('.--js-team-buttons');
     for (let index = 0; index < buttons.length; index++) {
-      buttons[index].onclick = function(event) {
+      buttons[index].onclick = function (event) {
         event.preventDefault();
         Team.removeActiveClass();
         Team.addActiveClass(this);
@@ -197,7 +202,7 @@ class Team {
     element.innerHTML = email;
     element.href = "mailto: " + email;
   }
-  
+
   /**
    * Formates the phone number and change the number of member as well as link's href
    * 
@@ -211,8 +216,8 @@ class Team {
     const countryCode = data[0].teamMembers[index].countryCode;
     const element = document.querySelector('#--js-phone-id a');
     var tempPhone = new String(phone.toString(0));
-    
-    var formattedPhone = countryCode + " (" + tempPhone.substring(0, 3) + ") " + tempPhone.substring(3,6) + " " + tempPhone.substring(6,10);
+
+    var formattedPhone = countryCode + " (" + tempPhone.substring(0, 3) + ") " + tempPhone.substring(3, 6) + " " + tempPhone.substring(6, 10);
     element.innerHTML = formattedPhone;
     element.href = "tel: " + countryCode + phone;
   }
@@ -233,11 +238,15 @@ class Team {
   }
 
 }
-
 var JSON_SOURCE = "/assets/json/teamMembers.json";
 
+// Defining Team
 var teams = new Team(JSON_SOURCE);
+
+// Initializing the team
 teams.init();
+// Watch reviews carousal
+
 new Glider(document.querySelector('.watch_reviews #review_carousal .glider'), {
   slidesToShow: 1,
   dots: '.dots',
