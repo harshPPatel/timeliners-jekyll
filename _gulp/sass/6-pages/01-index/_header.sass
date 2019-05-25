@@ -2,6 +2,14 @@
   height: 95vh
   position: relative
   overflow: hidden
+  @media screen and (max-width: 768px)
+    width: 100vw
+    height: auto
+    min-height: 90vh
+  @media screen and (max-width: 425px)
+    min-height: 700px
+  @media screen and (max-width: 375px)
+    min-height: 650px
   .u-container
     padding-left: 4%
   .u-overlay,
@@ -13,6 +21,8 @@
     min-width: 100%
     height: auto
     width: auto
+    @media screen and (max-width: 768px)
+      height: 100%
   &_video
     z-index: -1000
   .u-overlay
@@ -29,5 +39,11 @@
   p
     font-size: 28px
     margin: 0 0 32px
+    @media screen and (max-width: 480px)
+      font-size: 22px
+    @media screen and (max-width: 425px)
+      font-size: 18px
+      br
+        display: none
   .btn:first-of-type
     margin-right: 2rem
