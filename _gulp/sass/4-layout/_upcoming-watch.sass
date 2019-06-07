@@ -6,10 +6,20 @@
   .u-container
     position: relative
     z-index: 1
+    @media screen and (max-width: 968px)
+      .col-7-of-12,
+      .col-5-of-12
+        width: 100%!important
+        margin: 0 auto
+        text-align: center
+      padding: 1.5rem 0
   .u-overlay
     z-index: 0
   &__img
     transform: scale(1.1)
+    @media screen and (max-width: 968px)
+      max-height: 250px
+      transform: scale(1)
   &__text
     margin: 1rem 0
     *
@@ -32,5 +42,7 @@
       max-width: 300px
       width: 100%
       margin: 1rem 0 1.5rem
+      @media screen and (max-width: 968px)
+        margin: 1rem auto 2rem
       &:hover
         opacity: 0.8
