@@ -1,6 +1,11 @@
 .top_watch_card
   width: 250px
   margin: 0 auto
+  @media screen and (max-width: 968px)
+    width: 200px
+  @media screen and (max-width: 768px)
+    max-width: 250px
+    width: 100%
   .image_container
     box-shadow: $basic-shadow
     padding: 40px 0
@@ -70,6 +75,12 @@
       +flex
       width: 100%
       justify-content: space-between
+      @media screen and (max-width: 968px)
+        flex-direction: column
+      @media screen and (max-width: 768px)
+        flex-direction: row
+        a
+          margin: 0.3rem 0
       a
         text-decoration: none
         color: $heading-color
