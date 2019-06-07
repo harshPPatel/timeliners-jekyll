@@ -3,6 +3,8 @@
   background-color: $bg-color
   .flex-row
     justify-content: center
+    @media screen and (max-width: 568px)
+      text-align: center
   .img_container
     height: 250px
     width: 250px
@@ -18,8 +20,9 @@
     background-color: $white-color
     &:hover
       opacity: 0.8
-    &:nth-of-type(4n)
-      margin-right: 0
+    @media screen and (max-width: 568px)
+      height: 150px
+      width: 150px
     img
       height: 100%
       width: auto
