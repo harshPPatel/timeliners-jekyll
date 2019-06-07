@@ -5,26 +5,38 @@
     padding-bottom: 1rem
     &:not(:last-of-type)
       padding-right: 1rem
+    @media screen and (max-width: 1000px)
+      width: 100%
+      margin: 0 0 2rem
+      padding-bottom: 0
+      &:not(:last-of-type)
+        padding-right: 0
   .blog_container
     border-radius: 5px
-    height: 425px
+    min-height: 500px
+    max-width: 500px
     overflow: hidden
     box-shadow: $light-shadow
     transition: all 0.2s ease
     border: 1px solid rgba(#707070, 0.1)
+    @media screen and (max-width: 1000px)
+      margin: 0 auto
+      min-height: initial
     &:hover
       box-shadow: 3px 3px 6px rgba($black-color, 0.16)
       transform: scale(1.005)
   .blog_top
-    height: 60%
+    height: calc(0.6 * 500px)
     overflow: hidden
     position: relative
-
+    @media screen and (max-width: 1000px)
+      height: calc(0.5 * 500px)
     .img_container
       position: relative
       z-index: -1
-      height: 100%
-      width: 100%
+      height: calc(0.6 * 500px)
+      @media screen and (max-width: 1000px)
+        height: calc(0.5 * 500px)
       .u-overlay
         background: linear-gradient(to bottom, rgba($black-color, 0.3), rgba($black-color, 0.6))
       img
@@ -33,6 +45,12 @@
         width: auto
         transform: scale(1)
         transition: all 0.1s ease-in
+        @media screen and (max-width: 1000px)
+          width: 100%
+          height: auto
+        @media screen and (max-width: 425px)
+          height: 100%
+          width: auto
         &.long
           width: 100%
           height: auto
