@@ -1,19 +1,32 @@
 .about_header
-  height: 95vh
+  height: 90vh
+  min-height: 800px
+  max-height: 1100px
   +flex
   &_container
     max-width: 1500px
-    width: 100%
+    width: 95%
     margin: 0 auto
+  @media (max-width: 968px)
+    height: initial
+    padding: 125px 0 100px
+    .col-1-of-2:last-of-type
+      width: 95%!important
   .img_container
     height: 550px
     width: 550px
     border-radius: 10px
     overflow: hidden
-    margin: 0 auto
+    margin: auto
     margin-right: 60px
+    @media (max-width: 1135px)
+      width: 40vw
+      height: 40vw
+      max-height: 500px
   .col:first-of-type
     position: relative
+    @media (max-width: 968px)
+      display: none
     &::after
       display: block
       width: 1px
@@ -25,14 +38,23 @@
       top: 50%
       z-index: 1
       transform: translateY(-50%)
+      @media (max-width: 1135px)
+        display: none
     img
       height: 100%
       width: auto
+      @media (max-width: 1135px)
+        width: 100%
+        height: auto
   .content
     margin-left: 60px
+    @media (max-width: 1135px)
+      margin-left: 30px
     h1
       margin-top: -1rem
     p
       color: $heading-color
       font-size: 22px
       margin-bottom: 50px
+      @media (max-width: 968px)
+        font-size: 16px
