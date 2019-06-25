@@ -1,5 +1,10 @@
 .timeline_container
   width: 100%
+  @media (max-width: 968px)
+    width: 75%
+    margin: 0 auto
+  @media (max-width: 768px)
+    width: 95%
   .timeline_list
     width: 100%
     list-style: none
@@ -7,8 +12,12 @@
   .timeline_period
     cursor: default
     position: relative
+    @media (max-width: 968px)
+      width: 100%
     &:not(:first-of-type)
       margin-top: 1rem
+      @media (max-width: 968px)
+        margin-top: 1.5rem
     &::before
       content: ''
       display: block
@@ -20,18 +29,31 @@
       margin-right: auto
       text-align: right
       padding-right: 50px
+      @media (max-width: 968px)
+        padding-left: 50px
+        padding-right: 0
+        text-align: left
       &::before
         right: 0
         top: 25px
+        @media (max-width: 968px)
+          right: initial
+          left: 0
       .timeline_period_year
         &::before
           top: 25px
           right: -12px
+          @media (max-width: 968px)
+            right: initial
+            left: -12px
     &:nth-of-type(even)
       margin-left: auto
       text-align: left
       padding-left: 50px
       margin-right: 20px
+      @media (max-width: 968px)
+        margin-right: auto
+        margin-left: 0
       &::before
         left: 0
         top: 25px
