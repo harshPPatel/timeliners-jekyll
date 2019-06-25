@@ -8,15 +8,45 @@
   .u-container
     position: relative
     z-index: 1
+  @media (max-width: 568px)
+    .col
+      width: 100%!important
+      margin-left: 0
+      &:not(:last-of-type)
+        margin-bottom: 2rem
   .success_box
     +flex
+    @media (max-width: 768px)
+      flex-direction: column
+    @media (max-width: 568px)
+      flex-direction: row
+      justify-content: center
     .svg_container
       height: 100px
+      @media (max-width: 968px)
+        height: 80px
+        &:first-of-type
+          margin-left: 1rem
+      @media (max-width: 768px)
+        margin-bottom: 1rem
+        &:first-of-type
+          margin-left: 0
+      @media (max-width: 568px)
+        margin-bottom: 0
+        margin-right: 1rem
+      @media (max-width: 375px)
+        height: 60px
+        
       svg
         height: 100%
     .text_content
       margin-left: 40px
       cursor: default
+      @media (max-width: 968px)
+        margin-left: 20px
+        text-align: center
+      @media (max-width: 768px)
+        margin-left: 0
       p
         color: $white-color
       .success_number
