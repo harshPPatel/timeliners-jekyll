@@ -15,11 +15,21 @@
       left: 50%
       transform: translateX(-50%)
       background-color: rgba(#707070, 0.3)
+    @media (max-width: 968px)
+      .flex-row
+        display: block
+        text-align: center
     .col-1-of-2
       &:first-of-type
         border-right: 3px solid rgba(#707070, 0.3)
       &:nth-of-type(2)
         padding-left: 90px
+      @media (max-width: 968px)
+        width: 100%!important
+        &:first-of-type
+          border-right: none
+        &:nth-of-type(2)
+          padding-left: 0
   .team_img_container
     height: 450px
     width: 450px
@@ -32,6 +42,14 @@
       height: 100%
       display: block
       margin: 0 auto
+    @media (max-width: 968px)
+      margin: 0 auto 3rem
+      max-width: 400px
+      width: 95%
+      height: 400px
+    @media (max-width: 568px)
+      max-width: 300px
+      height: 300px
   .team_member_details
     *
       color: $heading-color
@@ -46,11 +64,18 @@
       text-transform: uppercase
     .kicker
       font-size: 1rem
+      @media (max-width: 968px)
+        width: 100%
+        max-width: 500px
+        margin: 0 auto
+        margin-bottom: 0.8rem
     .web
       padding-top: 1rem
       height: 25px
       display: flex
       align-items: center
+      @media (max-width: 968px)
+        justify-content: center
       .links_container
         display: flex
         align-items: flex-start
@@ -85,10 +110,16 @@
       margin: 0 auto
       +flex
       justify-content: center
+      @media (max-width: 768px)
+        width: 95%
       li
         display: inline-block
         &:not(:last-of-type)
           margin-right: 5rem
+          @media (max-width: 768px)
+            margin-right: 2rem
+          @media (max-width: 375px)
+            margin-right: 1rem
         a
           display: block
           height: 80px
@@ -97,6 +128,9 @@
           border: 1px solid rgba(#707070, 0.4)
           overflow: hidden
           transition: all 0.4s ease
+          @media (max-width: 568px)
+            height: 60px
+            width: 60px
           &.active
             border-color: $heading-color
           &:hover
