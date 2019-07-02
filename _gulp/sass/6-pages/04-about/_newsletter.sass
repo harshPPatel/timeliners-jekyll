@@ -6,6 +6,15 @@
   .u-container
     position: relative
     z-index: 999
+  @media (max-width: 768px)
+    .flex-row
+      flex-direction: column
+      .col-5-of-12,
+      .col-7-of-12
+        width: 100%
+    .text_content
+      text-align: center
+      margin-bottom: 2rem
   h6
     margin-bottom: -5px
   h4
@@ -24,6 +33,11 @@
     display: flex
     align-items: center
     justify-content: space-between
+    @media (max-width: 768px)
+      width: 90%
+      margin: 0 auto
+    @media (max-width: 568px)
+      flex-direction: column
     input[type="email"],
     button
       height: 50px!important
@@ -34,8 +48,13 @@
       text-align: center
       border-radius: 5px
       padding: 0 1rem
+      @media (max-width: 568px)
+        margin-bottom: 1rem
+        width: 100%
       &::placeholder
         color: rgba(#777777, 0.7)
     button
       width: 35%
       margin-bottom: 0
+      @media (max-width: 375px)
+        width: 100%
