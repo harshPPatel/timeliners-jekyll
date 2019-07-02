@@ -14,15 +14,32 @@
         right: 0
         top: 50%
         transform: translateY(-50%)
+        @media (max-width: 768px)
+          display: none
+
     &:last-of-type
       padding-left: 5rem
+
+    @media (max-width: 768px)
+      &:first-of-type
+        margin-bottom: 1rem
+      &:last-of-type
+        padding-left: 0
+        text-align: center
+
+  @media (max-width: 768px)
+    .flex-row
+      flex-direction: column  
   .img_container
     height: 285px
-    width: 285px
+    width: 100%
+    max-width: 285px
     overflow: hidden
     position: relative
     border-radius: 5px
     margin: 0 auto
+    @media (max-width: 320px)
+      height: 250px
     img
       height: 100%
       width: auto
@@ -33,6 +50,8 @@
   h2
     font-size: 2rem
     margin-bottom: 1rem
+    @media (max-width: 768px)
+      margin-bottom: 0
   .post
     margin-bottom: 1rem
   blockquote
