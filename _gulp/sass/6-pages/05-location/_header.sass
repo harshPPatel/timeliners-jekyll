@@ -2,6 +2,8 @@
   height: 95vh
   position: relative
   +flex
+  @media (max-height: 568px) 
+    height: 550px
   &::after
     content: ''
     display: block
@@ -18,6 +20,11 @@
     width: 100%
     margin: 0 auto
     z-index: 1
+    @media (max-width: 968px)
+      height: initial
+      padding: 125px 0 100px
+      .col-1-of-2:last-of-type
+        width: 95%!important
     .image_container
       height: 550px
       width: 550px
@@ -26,8 +33,14 @@
       margin: 0 auto
       margin-right: 60px
       border: 1px solid rgba(#707070, 0.2)
+      @media (max-width: 1135px)
+        width: 40vw
+        height: 40vw
+        max-height: 500px
     .col:first-of-type
       position: relative
+      @media (max-width: 968px)
+        display: none
       &::after
         display: block
         width: 1px
@@ -39,12 +52,23 @@
         top: 50%
         z-index: 1
         transform: translateY(-50%)
+        @media (max-width: 1135px)
+          display: none
       img
         height: 100%
         width: auto
+        @media (max-width: 1135px)
+          width: 100%
+          height: auto
     .text_content
       margin-left: 60px
+      @media (max-width: 1135px)
+        margin-left: 30px
       p
         color: $heading-color
         font-size: 22px
         margin-bottom: 60px
+        @media (max-width: 968px)
+          font-size: 16px
+        @media (max-width: 568px)
+          margin-bottom: 25px
