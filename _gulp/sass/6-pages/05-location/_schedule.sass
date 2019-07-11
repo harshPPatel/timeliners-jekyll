@@ -2,6 +2,8 @@
   +section-padding
   h2
     margin-bottom: 100px
+    @media (max-width: 768px)
+      margin-bottom: 40px
   .table_container
     width: 100%
     overflow-x: auto
@@ -9,7 +11,12 @@
       width: 100%
       text-align: center
       font-size: 1rem
-      border-collapse: separate
+      border-collapse: collapse
+      @media (max-width: 568px)
+        td,
+        th
+          padding: 1rem 1rem
+          white-space: nowrap
       tr
         height: 50px
         width: 100%
@@ -30,8 +37,12 @@
         background-color: #FFFFFF
         transition: all 0.2s ease
         cursor: default
+        @media (max-width: 568px)
+          transition: none
         &:hover
           background-color: #F7F7F7
+          @media (max-width: 568px)
+            background-color: #fff
   .additional_info
     font-style: italic
     text-align: right
@@ -39,3 +50,5 @@
     opacity: 0.6
     cursor: default
     margin-top: 1rem
+    @media (max-width: 568px)
+      text-align: left
