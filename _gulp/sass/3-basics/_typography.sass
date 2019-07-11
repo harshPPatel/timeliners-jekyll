@@ -60,6 +60,8 @@ h2
     text-transform: uppercase
     text-align: center
     margin-bottom: 10px
+    @media (max-width: 568px)
+      font-size: 2.25rem
     &::after
       display: block
       content: ''
@@ -69,6 +71,9 @@ h2
       margin: 0 auto 90px
       @media screen and (max-width: 768px)
         margin-bottom: 50px
+      @media (max-width: 568px)
+        width: 75px
+        height: 4px
 
 h3
   font-size: 2rem

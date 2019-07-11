@@ -4,6 +4,8 @@
   .map_container
     height: 550px
     width: 100%
+    @media (max-width: 968px)
+      display: none
     iframe
       height: 100%
       width: 100%
@@ -11,6 +13,8 @@
     background-color: $bg-color
     height: 550px
     width: 100%
+    @media (max-width: 968px)
+      height: auto
   .store_locator
     background-color: $white-color
     position: absolute
@@ -21,14 +25,34 @@
     height: auto
     display: block
     box-shadow: 0 0 15px rgba($black-color, 0.16)
+    @media (max-width: 968px)
+      position: static
+      top: 0
+      left: 0
+      transform: none
+    @media (max-width: 568px)
+      padding: 20px 0
     h2
       margin-bottom: 30px
       padding-top: 10px
+      @media (max-width: 568px)
+        font-size: 2.25rem
     form#store_locator_form
       display: block
       margin: -25px auto 0
+      @media (max-width: 968px)
+        width: 90%
+        margin: 0 auto      
       .flex-col
         text-align: center
+      @media (max-width: 768px)
+        width: 80%
+        .flex-row
+          flex-direction: column
+          .flex-col
+            width: 100%!important
+      @media (max-width: 480px)
+        width: 90%
       input
         display: block
         background-color: rgba($bg-color, 0.7)
@@ -42,6 +66,17 @@
         border-radius: 5px
         transition: all 0.2s ease
         color: $heading-color
+        @media (max-width: 968px)
+          &[name="streetName"],
+          &[name="addressLine2"],
+          &[name="province"],
+          &[name="postalCode"]
+            width: 100%!important
+        @media (max-width: 768px)
+          width: 100%!important
+        @media (max-width: 768px)
+          margin-bottom: 24px
+          height: 45px
         &::placeholder
           color: #243238
           opacity: 0.5
