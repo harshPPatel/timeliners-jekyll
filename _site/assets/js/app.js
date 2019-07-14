@@ -58,7 +58,8 @@ var productCarousal = $(function () {
     "navWidth": 45,
     "navHeight": 45,
     "navItemNum": 5,
-    "autoPlay": false
+    "autoPlay": true,
+    "autoPlayTimeout": 4000
   });
 });
 class Team {
