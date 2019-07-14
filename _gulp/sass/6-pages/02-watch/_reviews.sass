@@ -4,15 +4,23 @@
     width: 66.67%
     margin: 0 auto
     text-align: center
+    @media (max-width: 968px)
+      width: 80%
+    @media (max-width: 668px)
+      width: 95%
     img
       height: 125px
       width: 125px
       border-radius: 125px
       margin-bottom: 1rem
+      @media (max-width: 568px)
+        margin-bottom: 0
     .review_container
       padding: 1.25rem 0 0
       background: url(../../assets/img/watch-review-bg.png) top left no-repeat, url(../../assets/img/watch-review-bg.png) bottom right no-repeat
       background-size: 52.31px 60px
+      // @media (max-width: 568px)
+      //   padding: 1rem 0 0
       .review
         margin-bottom: 1rem
       .name
