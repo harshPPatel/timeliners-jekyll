@@ -1,13 +1,31 @@
 .reply_form_container
   margin-bottom: 100px
+  @media (max-width: 768px)
+    margin-bottom: 80px
+  @media (max-width: 568px)
+    margin-bottom: 50px
+  @media (max-width: 320px)
+    margin-bottom: 30px
   h5
     text-align: center
     margin-bottom: 50px
+    @media (max-width: 568px)
+      margin-bottom: 25px
+      margin-top: 1rem
   .row
     margin: 0 auto
+    @media (max-width: 968px)
+      width: 80%!important
+    @media (max-width: 768px)
+      width: 95%!important
   .reply_form
     .row:not(:last-of-type)
       margin-bottom: 20px
+    @media (max-width: 568px)
+      .col
+        width: 100%!important
+        margin: 0
+        margin-top: 1rem
 
     textarea,
     input:not([type="submit"])
