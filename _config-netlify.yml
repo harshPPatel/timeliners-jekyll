@@ -18,8 +18,9 @@ email: timeliners123@xyz.com
 phone: +1234567890
 description: >- # this means to ignore newlines until "baseurl:"
   A watch company who has been in the town for so many years with very deep expereience in watch sell.
+  
 
-baseurl: 'https://pedantic-yonath-b3aa54.netlify.com/' # the subpath of your site, e.g. /blog
+baseurl: 'https://pedantic-yonath-b3aa54.netlify.com' # the subpath of your site, e.g. /blog
 url: '' # the base hostname & protocol for your site, e.g. http://example.com
 
 paginate: 5
