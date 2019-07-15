@@ -3,6 +3,11 @@
   width: 100%
   +flex
   justify-content: space-between
+  @media (max-width: 568px)
+    margin-top: 10px
+  @media (max-width: 375px)
+    flex-direction: column
+    align-items: center
   .img_container
     display: block
     height: 60px
@@ -10,8 +15,16 @@
     overflow: hidden
     border-radius: 4px
     margin-right: 1rem
+    @media (max-width: 568px)
+      display: none
     img
       height: 100%
+  @media (max-width: 375px)
+    .next_post,
+    .previous_post
+      margin-top: 1.5rem
+      .content
+        text-align: center!important
   .next_post a,
   .previous_post a
     display: flex

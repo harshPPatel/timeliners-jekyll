@@ -4,11 +4,21 @@
   +flex
   justify-content: space-between
   cursor: default
+  @media (max-width: 480px)
+    flex-direction: column
+    .social_links_wrapper
+      margin-top: 0.75rem
   .blog_action,
   .like,
   .comment
     +flex
   .blog_action
+    @media (max-width: 320px)
+      flex-direction: column
+      margin-bottom: 1rem
+      .like
+        margin-bottom: 0.5rem
+        margin-right: 0!important
     p
       color: $heading-color
     .svg_container
