@@ -1,19 +1,38 @@
 .post_categories_container
   padding: 40px 0
   border-bottom: 2px solid rgba($black-color, 0.05)
+  @media (max-width: 768px)
+    padding: 20px 0
+    .tags_container
+      width: 80%
+      max-width: 400px
+      margin: 0 auto
+      text-align: center
+  @media (max-width: 568px)
+    .tags_container
+      width: 90%
   .blog_sidebar_heading
     margin-bottom: 20px
     &:last-of-type
       margin-top: 20px
   .archive_list
     list-style: none
+    @media (max-width: 768px)
+      width: 80%
+      max-width: 400px
+      margin: 0 auto
+    @media (max-width: 568px)
+      width: 90%
+    @media (max-width: 468px)
+      width: 100%
   .archive_row
     +flex
     justify-content: space-between
     position: relative
     cursor: default
+    overflow: hidden
     &::after
-      content: '....................................................................................'
+      content: '.................................................................................................................................................................'
       display: block
       color: $heading-color
       width: 100%

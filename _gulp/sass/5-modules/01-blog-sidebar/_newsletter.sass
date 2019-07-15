@@ -1,9 +1,18 @@
 .newsletter_container
   padding: 40px 0
+  @media (max-width: 768px)
+    padding: 20px 0
   .newsletter_form
     +flex
     justify-content: center
     width: 100%
+    @media (max-width: 768px)
+      width: 80%
+      margin: 0 auto
+    @media (max-width: 568px)
+      width: 90%
+    @media (max-width: 468px)
+      width: 100%
     &_input
       height: 40px
       width: calc(100% - 40px)

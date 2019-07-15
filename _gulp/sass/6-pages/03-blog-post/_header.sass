@@ -3,6 +3,8 @@
   height: 30vh
   overflow: hidden
   position: relative
+  @media (max-width: 468px)
+    max-height: 160px
   img
     width: 100%
     object-fit: cover
@@ -23,6 +25,8 @@
     h1
       font-size: 2.81rem
       margin: 0
+      @media (max-width: 568px)
+        font-size: 2rem
     .categories
       margin-top: 10px
       text-decoration: none
@@ -51,32 +55,3 @@
           text-decoration: underline
         &.post_link
           color: $primary-color
-
-.pagination 
-  width: 200px
-  margin: 0 auto
-  display: flex
-  align-items: center
-  justify-content: center
-  .pagination_link
-    font-size: 1.5rem
-    display: block
-    width: 40px
-    height: 40px
-    line-height: 34px
-    border-radius: 3px
-    border: 3px solid $primary-color
-    text-align: center
-    font-weight: bold
-    text-decoration: none
-    color: $primary-color
-    margin-right: 20px
-    cursor: default
-    &.active
-      background-color: $primary-color
-      color: $white-color
-    &.disabled
-      border-color: rgba($heading-color, 0.4)
-      color: rgba($heading-color, 0.4)
-  a.pagination_link
-    cursor: pointer
