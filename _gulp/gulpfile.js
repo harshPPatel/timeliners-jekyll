@@ -1,10 +1,4 @@
-var {
-  parallel,
-  src,
-  dest,
-  task,
-  watch
-} = require('gulp'),
+var { parallel, src, dest, task, watch } = require('gulp'),
   autoprefixer = require('gulp-autoprefixer'),
   cleanCSS = require('gulp-clean-css'),
   sass = require('gulp-sass'),
@@ -25,69 +19,68 @@ var cssDestination = '../assets/css/',
   jsonDestination = '../assets/json/';
 
 // SASS Task
-task('sass', function (cb) {
+task('sass', function(cb) {
   return src(sassSource)
-    .pipe(sass({
-      outputStyle: 'compressed'
-    }))
+    .pipe(
+      sass({
+        outputStyle: 'compressed'
+      })
+    )
     .pipe(plumber())
-    .pipe(autoprefixer({
-      browsers: ["cover 99.5%"]
-    }))
-    .pipe(cleanCSS({
-      compatibility: 'ie8'
-    }))
+    .pipe(
+      autoprefixer({
+        browsers: ['cover 99.5%']
+      })
+    )
+    .pipe(
+      cleanCSS({
+        compatibility: 'ie8'
+      })
+    )
     .pipe(concat('styles.css'))
-    .pipe(dest(cssDestination))
+    .pipe(dest(cssDestination));
   cb();
-})
+});
 
 // JavaScript Task
-task('appJS', function (cb) {
-  pump([
-      src(appJSSource),
-      plumber(),
-      concat('app.js'),
-      dest(jsDestination)
-    ],
+task('appJS', function(cb) {
+  pump(
+    [src(appJSSource), plumber(), concat('app.js'), dest(jsDestination)],
     cb
   );
-})
+});
 
 // Vendor JavaScript Task
-task('vendorJS', function (cb) {
-  pump([
-      src(vendorJSSource),
-      plumber(),
-      concat('vendors.js'),
-      dest(jsDestination)
-    ],
+task('vendorJS', function(cb) {
+  pump(
+    [src(vendorJSSource), plumber(), concat('vendors.js'), dest(jsDestination)],
     cb
   );
-})
+});
 
 // JSON Task
-task('json', function (cb) {
+task('json', function(cb) {
   return src(jsonSource)
     .pipe(plumber())
-    .pipe(dest(jsonDestination))
+    .pipe(dest(jsonDestination));
   cb();
-})
+});
 
 // Watch Task
-task('watch', function (cb) {
-  browserSync.init({
+task('watch', function(cb) {
+  browserSync.init(
+    {
       server: {
         baseDir: '../_site'
       },
       notify: true
     },
-    function (err, bs) {
-      bs.addMiddleware("*", function (req, res) {
+    function(err, bs) {
+      bs.addMiddleware('*', function(req, res) {
         res.writeHead(302, {
-          location: "404.html"
+          location: '/404.html'
         });
-        res.end("Redirecting!");
+        res.end('Redirecting!');
       });
     }
   );
@@ -103,7 +96,7 @@ task('watch', function (cb) {
     '../_site/assets/json/*.json'
   ]).on('change', browserSync.reload);
   cb();
-})
+});
 
 // Default Task
 exports.default = parallel(
@@ -111,4 +104,5 @@ exports.default = parallel(
   task('appJS'),
   task('vendorJS'),
   task('json'),
-  task('watch'));
+  task('watch')
+);
