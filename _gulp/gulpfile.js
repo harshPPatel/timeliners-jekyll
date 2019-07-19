@@ -6,6 +6,7 @@ var { parallel, src, dest, task, watch } = require('gulp'),
   concat = require('gulp-concat'),
   pump = require('pump'),
   browserSync = require('browser-sync');
+babel = require('gulp-babel');
 
 // Source Paths for tasks
 var sassSource = 'sass/**/*.sass',
@@ -45,7 +46,15 @@ task('sass', function(cb) {
 // JavaScript Task
 task('appJS', function(cb) {
   pump(
-    [src(appJSSource), plumber(), concat('app.js'), dest(jsDestination)],
+    [
+      src(appJSSource),
+      plumber(),
+      concat('app.js'),
+      babel({
+        presets: ['@babel/env']
+      }),
+      dest(jsDestination)
+    ],
     cb
   );
 });
