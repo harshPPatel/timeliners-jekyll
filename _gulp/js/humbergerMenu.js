@@ -1,8 +1,11 @@
-var toggleButton = document.getElementById('--js-hamburger-btn');
+// Fetching Humburger Button from document (HTML Page)
+var humburgerButton = document.getElementById('--js-hamburger-btn');
 
-toggleButton.addEventListener('click', function(event){
+// Adding click listener to Humburger Menu and toggling active class 
+// to it and addinf mobile-show class to navigation
+humburgerButton.addEventListener('click', function(event){
   event.preventDefault();
-  toggleButton.classList.toggle('active');
+  humburgerButton.classList.toggle('active');
   document.getElementById('--js-navigation').classList.toggle('mobile-show');
   document.body.classList.toggle('mobile-navigation-open');
 });
