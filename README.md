@@ -1,41 +1,11 @@
-# timeliners
+# Frasco [![GitHub release](https://img.shields.io/github/release/ixkaito/frasco.svg)](https://github.com/ixkaito/frasco/releases) [![Build Status](https://travis-ci.org/ixkaito/frasco.svg?branch=master)](https://travis-ci.org/ixkaito/frasco) [![license](https://img.shields.io/github/license/ixkaito/frasco.svg?maxAge=2592000)](https://github.com/ixkaito/frasco/blob/master/LICENSE)
 
-[![license][license-image]][license-url] [![Dependency Status][dependencyci-image]][dependencyci-url]
+__Jekyll starter kit including full setup for gulp, Sass, Autoprefixer, PostCSS, Webpack, imagemin, Browsersync etc.__
 
-> Static Blog website with Jekyll!
+## Documentation
 
-## Prerequisites
+https://ixkaito.github.io/frasco/
 
-To install this project, you'll need the following things installed on your machine.
+## Copyright / License
 
-1. [Jekyll](http://jekyllrb.com/).
-2. [NodeJS](http://nodejs.org) - use the installer.
-
-## Local Installation
-
-1. Clone this repo, or download it into a directory of your choice.
-2. Inside the directory, run `npm install`.
-3. Inside the directory, run `bundle install`.
-
-## Usage
-
-**Development mode**
-
-This will give you file watching, browser synchronisation, auto-rebuild, CSS injecting etc.
-
-```shell
-$ npm run start
-```
-
-**Deploy mode**
-
-You can easily deploy your site build with the command
-```shell
-$ npm run deploy
-```
-
-
-[license-image]: https://img.shields.io/badge/license-ISC-blue.svg
-[license-url]: https://github.com/harshPPatel/timeliners/blob/master/LICENSE
-[dependencyci-image]: https://dependencyci.com/github/harshPPatel/timeliners/badge
-[dependencyci-url]: https://dependencyci.com/github/harshPPatel/timeliners
+Copyright © 2015 the contributors of the Frasco project under the [MIT License](https://github.com/ixkaito/frasco/blob/master/LICENSE).
